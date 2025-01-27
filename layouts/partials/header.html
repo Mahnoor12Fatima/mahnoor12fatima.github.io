@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  
+
+    
+</head>
+<body>
+    <header class="p-4 px-7">
+        <nav class=" mx-auto flex flex-col sm:flex-row items-center justify-between">
+          
+            <div class="flex items-center space-x-2  mt-[5vmin] sm:mb-0  ">
+                <div class="  logo bg-cover bg-gray-800 bg-center h-14 w-54 leading-[50px] "></div>
+                 </div>
+       <ul class="flex flex-row space-x-6 items-center  mt-[4vmin] ">
+
+                <li><a href="/" id="work" class=" cursor-pointer  ">work</a></li>
+                <li><a href="{{ "/about"}}" class=" cursor-pointer  ">About</a></li> <!-- Link to about page -->
+         </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>
