@@ -3,7 +3,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {{ range .Params.images }}
         <!-- Loop through images -->
-        <a href="{{ .link }}" target="_blank" class="block group relative overflow-hidden rounded-lg shadow-lg">
+        <a href="{{ .link }}" target="_blank" class="block group relative overflow-hidden  shadow-lg">
             <!-- Image -->
             <img 
                 src="{{ .src }}" 
@@ -15,12 +15,14 @@
                 class="absolute inset-0 bg-blue-500 bg-opacity-50 transition-opacity opacity-0 group-hover:opacity-80"
             ></div>
             <!-- Image name (alt text) -->
+             
             <div 
-                class="absolute inset-0 flex items-center justify-center text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity"
-            >
-            
-                {{ .name }}
-            </div>
+            class="absolute inset-0 flex flex-col items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity mx-16 space-y-2">
+            <p>~~The Athletic~~</p>
+            <p>{{ .name }}</p>
+        </div>
+        
+        
         </a>
         {{ end }}
     </div>
