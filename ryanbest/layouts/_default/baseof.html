@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  
+
+    
+</head>
+<body>
+    {{ partial "header.html" . }} <!-- Include header partial -->
+
+    <main class="pb-7" role="main">
+        {{ block "main" . }}{{ end }} <!-- Dynamic content inserted here -->
+    </main>
+
+    {{ partial "footer.html" . }} <!-- Include footer partial -->
+
+  </body>
+</html>

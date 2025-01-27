@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Born and raised in the Baltimore, Maryland area and now residing in Atlanta, Georgia, Kris Smith is emerging as a leading sports data storyteller and data visualization thought leader. She has identified critical gaps in the intersection of data analytics, data visualization, data storytelling, business, and sports. Leveraging her passion for these industries, Kris is carving out her own path as a trusted advisor, consultant, storyteller, and strategist.&lt;/p&gt;&#xA;&lt;p&gt;Kris is the Founder and CEO of TECHnically Yours, LLC, a data visualization consulting firm specializing in helping sports teams and franchises make better data-driven and data-informed decisions while effectively communicating insights through data storytelling.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
