@@ -1,12 +1,14 @@
 body{
     background: #fede00;
-    font-family: "EB Garamond", Garamond, "Times New Roman", serif;
+    font-family: 'Alegreya Sans';
+}
+h1,h2,h3{
+    font-family: "Neuton", serif;
 }
 nav a, footer a{
     display: block;
     padding: .25em .5em;
-    font-family: "EB Garamond", Garamond, "Times New Roman", serif;
-    font-size: 19px;
+     font-size: 19px;
 }
 .search__input {
     background: transparent;
@@ -36,43 +38,48 @@ text-decoration: underline;}
     margin-top: 1em;
     padding: 0 2rem;
     font-weight: 500;
+    font-family: "Neuton", serif;
 }
 .main h2{
     font-size: 3em;
     padding: 0 2rem;
     font-weight: 500;
+    font-family: "Neuton", serif;
 }
 .main p{
     font-size: 3em;
     color: #64644B;
     padding: 0 2rem;
+    font-family: 'Alegreya Sans';
 }
 .about-h1{
     font-size: 3em;
     text-align: center;
+    font-family: "Neuton", serif;
 }
 .about-p{
     text-align: justify;
     font-size: 1.3125em; 
     line-height: 1.5;
+    font-family: 'Alegreya Sans';
     
 }
 #italic{
     font-size: 1.312em; 
   
 }
+
 .date{
     padding: .5em 0;
+    font-family: 'Alegreya Sans';
 }
 
 @media (max-width: 640px) {
-    body {
-        padding: 1em; /* Add padding for small screens */
-    }
-
+   
     .main h1 {
         font-size: 4em; /* Smaller heading size */
         padding: 0 1rem; /* Reduce padding */
+
     }
 
     .main h2 {
@@ -85,64 +92,6 @@ text-decoration: underline;}
         padding: 0 1rem; /* Reduce padding */
     }
 
-    .about-h1 {
-        font-size: 2em; /* Adjust About heading size */
-        margin-bottom: 1.5rem; /* Adjust spacing */
-    }
-
-    .about-p {
-        font-size: 1em; /* Smaller paragraph font */
-        padding: 0 1rem; /* Reduce horizontal padding */
-    }
-
-    #italic {
-        font-size: 0.875em; /* Smaller size for italic text */
-        text-align: center; /* Center-align for better readability */
-    }
-
-    img {
-        max-width: 100%; /* Ensure images are responsive */
-        height: auto; /* Maintain aspect ratio */
-        margin: 1rem auto; /* Add consistent spacing */
-    }
-
-    .about img {
-        width: 90%; /* Limit image width */
-        margin: 1rem auto; /* Center the image */
-    }
-
-    .date {
-        font-size: 0.875em; /* Adjust font size for dates */
-        padding: 0.5em; /* Adjust spacing */
-    }
-
-    .bg-white {
-        padding: 1.5rem; /* Reduce padding for small screens */
-    }
-
-    .search__input {
-        font-size: 1em; /* Adjust search input size */
-        padding: 0.5em; /* Reduce padding */
-    }
-
-    .about {
-        margin: 0 auto; /* Center-align for small screens */
-        padding: 1rem; /* Reduce padding */
-    }
-
-    .mx-22 {
-        margin: 0; /* Override extra margin */
-    }
-
-    .pb-28 {
-        padding-bottom: 1rem; /* Reduce padding */
-    }
-
-    .max-w-sm {
-        max-width: 100%; /* Allow full-width for small screens */
-    }
-
-    .mt-8 {
-        margin-top: 1.5rem; /* Adjust spacing */
-    }
+      
+    
 }
