@@ -22,7 +22,18 @@
     <!-- Responsive Paragraph -->
     <p class="text-3xl sm:text-xl text-gray-700 mt-4 font-medium mx-4">
         An inarguably well-designed Jekyll theme.
-    </p> <h2 class="text-center text-4xl font-medium mt-30 mb-4">Contents</h2>
+    </p> 
+    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") }}
+
+<!-- Dynamic Heading -->
+<h2 class="text-center text-4xl font-medium mt-30 mb-4">
+    {{ if eq $paginator.PageNumber 1 }}
+        Contents
+    {{ else }}
+        Page {{ $paginator.PageNumber }}
+    {{ end }}
+</h2>
+
     <img src="https://patdryburgh.github.io/hitchens/assets/images/divider.svg" alt="Divider" class="mx-auto pb-28">
 
   <!-- Centered Container -->
