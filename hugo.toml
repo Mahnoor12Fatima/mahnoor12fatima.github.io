@@ -1,4 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-pagination.pageSize = 3
+[pagination]
+    disableAliases = false
+    pagerSize = 3
+    

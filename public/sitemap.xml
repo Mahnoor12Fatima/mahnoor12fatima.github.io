@@ -8,31 +8,31 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post3/</loc>
+    <loc>http://localhost:1313/blogs/</loc>
     <lastmod>2018-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:1313/blogs/not-all-posts-need-a-title/</loc>
     <lastmod>2018-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post5/</loc>
+    <loc>http://localhost:1313/blogs/silver-blaze/</loc>
     <lastmod>2018-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post4/</loc>
+    <loc>http://localhost:1313/blogs/the-adventure-of-charles-augustus-milverton/</loc>
     <lastmod>2018-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post2/</loc>
+    <loc>http://localhost:1313/blogs/the-adventure-of-the-priory-school/</loc>
     <lastmod>2018-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post1/</loc>
+    <loc>http://localhost:1313/blogs/the-adventure-of-the-speckled-band/</loc>
     <lastmod>2018-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post6/</loc>
+    <loc>http://localhost:1313/blogs/when-one-considers-that/</loc>
     <lastmod>2012-12-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post7/</loc>
+    <loc>http://localhost:1313/blogs/post8/</loc>
     <lastmod>2011-11-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post8/</loc>
+    <loc>http://localhost:1313/blogs/the-adventure-of-the-cardboard-box/</loc>
     <lastmod>2011-11-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
