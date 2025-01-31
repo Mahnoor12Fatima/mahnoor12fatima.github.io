@@ -23,7 +23,7 @@
     <p class="text-3xl sm:text-xl text-gray-700 mt-4 font-medium mx-4">
         An inarguably well-designed Jekyll theme.
     </p> 
-    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blogs") }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") }}
 
 <!-- Dynamic Heading -->
 <h2 class="text-center text-4xl font-medium mt-30 mb-4">
@@ -38,8 +38,8 @@
 
   <!-- Centered Container -->
 <div class="pagination-container max-w-xl mx-auto">
-    {{ $blogs := where .Site.RegularPages "Section" "blogs" }}
-    {{ $paginator := .Paginate $blogs }}
+    {{ $blog := where .Site.RegularPages "Section" "blog" }}
+    {{ $paginator := .Paginate $blog }}
     {{ range $paginator.Pages }}
     <div class="post-item flex flex-col lg:flex-row pb-4 mb-4">
         <!-- Post Date (on left for small screens, right side for larger screens) -->
