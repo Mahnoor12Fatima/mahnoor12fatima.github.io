@@ -1,0 +1,20 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+[pagination]
+    disableAliases = false
+    pagerSize = 3
+
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false  # Ensure English does not get an "en/" prefix
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    contentDir = "content/en"
+    weight = 1
+  [languages.de]
+    languageName = "German"
+    contentDir = "content/de"
+    weight = 2

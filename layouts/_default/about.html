@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<body>
+   
+   
+       
+    <div class="bg-white mx-auto my-8 max-w-4xl py-40  shadow-lg">
+        <div class="about  mx-22 text-sm  leading-6">
+            <h1 class="about-h1 text-center text-2xl font-medium mb-4">{{ .Title }}</h1>
+            <img src="https://patdryburgh.github.io/hitchens/assets/images/divider.svg" alt="Divider" class="mx-auto  pb-28  ">
+            <div class="content prose mx-auto">
+                {{ .Content }}
+            </div> 
+        </div>
+    </div>
+    
+</body>
+
+{{ end }}

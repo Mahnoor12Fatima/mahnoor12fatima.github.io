@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+
+    
+</head>
+<body>
+    <footer class="py-8">
+        <div class="flex justify-center space-x-4">
+            {{ $menu := index .Site.Data.navigation.nav .Site.Language.Lang }}
+            {{ range $menu }}
+                <a href="{{ .url | relURL }}" class="text-gray-600 hover:text-black">
+                    {{ .name }}
+                </a>
+            {{ end }}
+        </div>
+    </footer>
+    
+
+    
+</body>
+</html>

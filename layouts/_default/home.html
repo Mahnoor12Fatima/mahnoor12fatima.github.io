@@ -1,0 +1,68 @@
+{{ define "main" }}
+<!DOCTYPE html>
+
+<body>
+<div class="text-center main">
+    <h1 class="lg:text-7xl text-4xl font-medium mt-4 mx-4">
+        {{ .Title }}
+    </h1>
+
+    <!-- Responsive Paragraph -->
+    <p class="text-3xl sm:text-xl text-gray-700 mt-4 font-medium mx-4">
+        {{ .Content }}
+    </p> 
+
+    {{ $blog := where .Site.RegularPages "Section" "blog" }}
+    {{ $blog := where $blog "Lang" .Site.Language.Lang }} <!-- Filter by language -->
+    {{ $paginator := .Paginate $blog }}
+    
+    <!-- Dynamic Heading -->
+    <h2 class="text-center text-4xl font-medium mt-30 mb-4">
+        {{ if eq $paginator.PageNumber 1 }}
+            {{ .Params.contents | default "Contents" }}
+        {{ else }}
+            {{ .Params.page_number | default "Page" }} {{ $paginator.PageNumber }}
+        {{ end }}
+    </h2>
+
+    <img src="https://patdryburgh.github.io/hitchens/assets/images/divider.svg" alt="Divider" class="mx-auto pb-28">
+
+    <!-- Centered Container -->
+    <div class="pagination-container max-w-xl mx-auto">
+        {{ $blog := where .Site.RegularPages "Section" "blog" }}
+        {{ $paginator := .Paginate $blog }}
+        {{ range $paginator.Pages }}
+        <div class="post-item flex flex-col lg:flex-row pb-4 mb-4">
+            <!-- Post Date -->
+            <div class="w-full lg:w-4/12 text-left lg:text-right text-gray-600 text-lg order-1 lg:order-2 mb-2 lg:mb-0 ml-6 lg:ml-0">
+                {{ .Date.Format "Jan 2, '06" }}
+            </div>
+
+            <!-- Post Title -->
+            <div class="w-full lg:w-8/12 text-left order-2 lg:order-1 ml-6 lg:ml-0">
+                <h3 class="text-2xl font-medium">
+                    <a href="{{ .RelPermalink }}" class="text-black">{{ .Title }}</a>
+                </h3>
+            </div>
+        </div>
+        {{ end }}
+
+        <!-- Pagination Navigation -->
+        <div class="pagination-nav mt-10 flex justify-between items-center">
+            {{ if $paginator.HasNext }}
+            <a href="{{ $paginator.Next.URL }}" class="text-black font-medium ml-10">&lt; {{ .Params.older_posts | default "Older Posts" }}</a>
+            {{ end }}
+
+            <div class="text-center flex-grow">
+                <span class="font-medium">{{ $paginator.PageNumber }} {{ .Params.of | default "of" }} {{ $paginator.TotalPages }}</span>
+            </div>
+
+            {{ if $paginator.HasPrev }}
+            <a href="{{ $paginator.Prev.URL }}" class="text-black font-medium mr-10">{{ .Params.newer_posts | default "Newer Posts" }} &gt;</a>
+            {{ end }}
+        </div>
+    </div>
+</div>
+</body>
+
+{{ end }}

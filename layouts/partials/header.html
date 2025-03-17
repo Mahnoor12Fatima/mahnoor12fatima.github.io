@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+</head>
+<body>
+    <header class="py-8">
+        <div class="container mx-auto text-center">
+            <nav class="flex justify-center space-x-4 text-sm">
+                {{ $currentLang := .Site.Language.Lang }}
+                {{ $defaultLang := .Site.Params.defaultContentLanguage | default "en" }}
+
+                <!-- Load Navigation for the Current Language -->
+                {{ range index site.Data.navigation.nav $currentLang }}
+                    {{ $url := .url }}
+                    {{ if eq $currentLang $defaultLang }}
+                        {{ $url = .url | relURL }}  <!-- Remove "/en/" for default language -->
+                    {{ else }}
+                        {{ $url = .url | absLangURL }}
+                    {{ end }}
+                    <a href="{{ $url }}" class="text-gray-600 hover:text-black">
+                        {{ .name }}
+                    </a>
+                {{ end }}
+
+                <!-- Language Switcher -->
+                {{ if gt (len .Site.Languages) 1 }}
+                    {{ range .Site.Languages }}
+                        {{ if ne .Lang $currentLang }}
+                            {{ $langPrefix := "" }}
+                            {{ if ne .Lang $defaultLang }}
+                                {{ $langPrefix = printf "/%s" .Lang }}
+                            {{ end }}
+                            <a href="{{ $langPrefix }}{{ $.Page.RelPermalink | strings.TrimPrefix (printf "/%s" $currentLang) }}"
+                               class="underline px-2 text-gray-600 hover:text-black">
+                                {{ .LanguageName }}
+                            </a>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
