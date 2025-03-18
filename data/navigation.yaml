@@ -19,7 +19,7 @@ nav:
     - name: "Über uns"
       url: "/de/about"
     - name: "Kontakt"
-      url: "/kontakt"
+      url: "/contact"
     - name: "Quelle"
       url: "https://github.com/patdryburgh/hitchens"
     - name: "Designer"
