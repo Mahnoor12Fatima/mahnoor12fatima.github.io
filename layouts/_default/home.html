@@ -28,7 +28,7 @@
     <img src="https://patdryburgh.github.io/hitchens/assets/images/divider.svg" alt="Divider" class="mx-auto pb-28">
 
     <!-- Centered Container -->
-    <div class="pagination-container max-w-xl mx-auto">
+    <div class="pagination-container max-w-3xl mx-auto px-4 sm:px-6 md:px-8">
         {{ $blog := where .Site.RegularPages "Section" "blog" }}
         {{ $paginator := .Paginate $blog }}
         {{ range $paginator.Pages }}
@@ -40,7 +40,7 @@
 
             <!-- Post Title -->
             <div class="w-full lg:w-8/12 text-left order-2 lg:order-1 ml-6 lg:ml-0">
-                <h3 class="text-2xl  font-medium">
+                <h3 class="text-xl md:text-2xl  font-medium">
                     <a href="{{ .RelPermalink }}" class="text-black">{{ .Title }}</a>
                 </h3>
             </div>
@@ -48,17 +48,17 @@
         {{ end }}
 
         <!-- Pagination Navigation -->
-        <div class="pagination-nav mt-10 flex justify-between items-center">
+        <div class="pagination-nav mt-10 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {{ if $paginator.HasNext }}
-            <a href="{{ $paginator.Next.URL }}" class="text-black font-medium ml-10">&lt; {{ .Params.older_posts | default "Older Posts" }}</a>
+            <a href="{{ $paginator.Next.URL }}" class="text-black font-medium text-lg px-4 py-2">&lt; {{ .Params.older_posts | default "Older Posts" }}</a>
             {{ end }}
 
-            <div class="text-center flex-grow">
+            <div class="text-center ">
                 <span class="font-medium">{{ $paginator.PageNumber }} {{ .Params.of | default "of" }} {{ $paginator.TotalPages }}</span>
             </div>
 
             {{ if $paginator.HasPrev }}
-            <a href="{{ $paginator.Prev.URL }}" class="text-black font-medium mr-10">{{ .Params.newer_posts | default "Newer Posts" }} &gt;</a>
+            <a href="{{ $paginator.Prev.URL }}" class="font-medium text-lg px-4 py-2 ">{{ .Params.newer_posts | default "Newer Posts" }} &gt;</a>
             {{ end }}
         </div>
     </div>
