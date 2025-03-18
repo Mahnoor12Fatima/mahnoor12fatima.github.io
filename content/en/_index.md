@@ -8,4 +8,4 @@ layout: home
 of: "of"
 ---
 
-An inarguably well-designed hugos theme.
+An inarguably well-designed hugo theme.
