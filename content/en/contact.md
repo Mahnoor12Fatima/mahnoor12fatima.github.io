@@ -1,0 +1,31 @@
+---
+title: "Contact"
+date: 2025-01-26
+layout: "contact"
+of: "of"
+description: "Have questions? Get in touch with us!"
+button_text: "Send Message"
+fields:
+  - name: "first-name"
+    label: "First Name"
+    placeholder: "Enter your first name"
+    type: "text"
+  - name: "last-name"
+    label: "Last Name"
+    placeholder: "Enter your last name"
+    type: "text"
+  - name: "email"
+    label: "Email"
+    placeholder: "Enter your email"
+    type: "email"
+  - name: "phone-number"
+    label: "Phone Number"
+    placeholder: "123-456-7890"
+    type: "tel"
+    has_country_select: true
+  - name: "message"
+    label: "Message"
+    placeholder: "Type your message here"
+    type: "textarea"
+privacy_policy: "By selecting this, you agree to our privacy policy."
+---

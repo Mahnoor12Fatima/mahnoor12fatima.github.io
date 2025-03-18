@@ -1,0 +1,31 @@
+---
+title: "Kontakt"
+date: 2025-01-26
+layout: "contact"
+of: "von"
+description: "Haben Sie Fragen? Kontaktieren Sie uns!"
+button_text: "Nachricht senden"
+fields:
+  - name: "first-name"
+    label: "Vorname"
+    placeholder: "Geben Sie Ihren Vornamen ein"
+    type: "text"
+  - name: "last-name"
+    label: "Nachname"
+    placeholder: "Geben Sie Ihren Nachnamen ein"
+    type: "text"
+  - name: "email"
+    label: "E-Mail"
+    placeholder: "Geben Sie Ihre E-Mail-Adresse ein"
+    type: "email"
+  - name: "phone-number"
+    label: "Telefonnummer"
+    placeholder: "123-456-7890"
+    type: "tel"
+    has_country_select: true
+  - name: "message"
+    label: "Nachricht"
+    placeholder: "Geben Sie hier Ihre Nachricht ein"
+    type: "textarea"
+privacy_policy: "Durch die Auswahl dieser Option stimmen Sie unserer Datenschutzerklärung zu."
+---

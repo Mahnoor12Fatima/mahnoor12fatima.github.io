@@ -1,0 +1,67 @@
+{{ define "main" }}
+<section class="mx-auto p-6 my-8 bg-white shadow-md max-w-4xl rounded-lg">
+    <div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                {{ .Title }}
+            </h2>
+            <p class="mt-2 text-lg text-gray-600">
+                {{ .Params.description }}
+            </p>
+        </div>
+        
+        <form action="#" method="POST" class="mx-auto mt-10 max-w-xl">
+            <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 gap-x-8">
+                {{ range .Params.fields }}
+                <div class="{{ if eq .type "textarea" }}sm:col-span-2{{ end }}">
+                    <label for="{{ .name }}" class="block text-sm font-semibold text-gray-900">
+                        {{ .label }}
+                    </label>
+                    <div class="mt-2.5">
+                        {{ if .has_country_select }}
+                        <!-- Phone Number with Country Select -->
+                        <div class="flex rounded-md bg-white border border-gray-300 focus-within:ring-2 focus-within:ring-indigo-600">
+                            <select title="phone" id="country" name="country" class="w-20 appearance-none border-r border-gray-300 px-3 py-2 text-gray-500">
+                                <option>US</option>
+                                <option>CA</option>
+                                <option>EU</option>
+                            </select>
+                            <input type="tel" name="{{ .name }}" id="{{ .name }}" placeholder="{{ .placeholder }}" 
+                                class="block w-full px-3 py-2 text-gray-900 placeholder-gray-400 focus:ring-0 focus:outline-none">
+                        </div>
+                        {{ else if eq .type "textarea" }}
+                        <!-- Textarea Field -->
+                        <textarea name="{{ .name }}" id="{{ .name }}" rows="4" placeholder="{{ .placeholder }}" 
+                            class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-600">
+                        </textarea>
+                        {{ else }}
+                        <!-- Input Fields -->
+                        <input type="{{ .type }}" name="{{ .name }}" id="{{ .name }}" placeholder="{{ .placeholder }}" 
+                            class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-600">
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+
+            <!-- Privacy Policy Agreement -->
+            <div class="flex gap-x-4 mt-6">
+                <div class="flex h-6 items-center">
+                    <input type="checkbox" id="privacy-policy" name="privacy-policy" class="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-600">
+                </div>
+                <label for="privacy-policy" class="text-sm text-gray-600">
+                    {{ .Params.privacy_policy }}
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="mt-10">
+                <button type="submit"
+                    class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow hover:bg-indigo-500 focus:ring-2 focus:ring-indigo-600">
+                    {{ .Params.button_text }}
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+{{ end }}

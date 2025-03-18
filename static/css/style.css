@@ -2,7 +2,7 @@
 
 body {
     font-family: Space Mono, Roboto Mono, monospace;
-    background-color: #fede00;
+    
 }
 
 .logo {
@@ -82,4 +82,7 @@ footerimg{
   a:hover{
     color:gray;
     
+  }
+  main.pb-7{
+    padding-bottom: 0px;
   }

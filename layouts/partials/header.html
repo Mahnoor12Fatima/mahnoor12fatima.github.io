@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,7 +49,7 @@
             </nav>
 
             <!-- Mobile Menu Button -->
-            <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
+            <button id="menu-toggle" title="menu-toggle" class="lg:hidden text-white focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
@@ -60,7 +60,7 @@
         <nav id="menu" class="hidden lg:hidden fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-4 text-sm w-full h-full">
             <div class="w-full flex justify-between items-center px-4">
                 <a href="/" class="text-lg font-bold mx-auto">{{ .Site.Title }}</a>
-                <button id="close-menu" class="text-white focus:outline-none">
+                <button title="cross" id="close-menu" class="text-white focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
