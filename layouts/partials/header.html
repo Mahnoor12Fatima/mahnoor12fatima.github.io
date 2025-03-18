@@ -13,8 +13,8 @@
     <header class="py-4 bg-black text-white shadow-md">
         <div class="container mx-auto flex justify-between items-center px-4">
             <a href="/" class="text-lg font-bold">{{ .Site.Title }}</a>
-            
-            <!-- Large Screen Navigation -->
+
+            <!-- Desktop Navigation -->
             <nav class="hidden lg:flex lg:items-center lg:space-x-4 text-sm">
                 {{ $currentLang := .Site.Language.Lang }}
                 {{ $defaultLang := .Site.Params.defaultContentLanguage | default "en" }}
@@ -31,20 +31,22 @@
                     </a>
                 {{ end }}
 
-                <!-- Language Switcher -->
+                <!-- Language Dropdown -->
                 {{ if gt (len .Site.Languages) 1 }}
+                <select id="language-select" class="bg-gray-800 text-white py-2 px-4 rounded">
+                    <option value="{{ .Site.Language.Lang }}" selected disabled>🌐 {{ .Site.Language.LanguageName }}</option>
                     {{ range .Site.Languages }}
-                        {{ if ne .Lang $currentLang }}
-                            {{ $langPrefix := "" }}
-                            {{ if ne .Lang $defaultLang }}
-                                {{ $langPrefix = printf "/%s" .Lang }}
-                            {{ end }}
-                            <a href="{{ $langPrefix }}{{ $.Page.RelPermalink | strings.TrimPrefix (printf "/%s" $currentLang) }}"
-                               class="px-4 py-2 text-white hover:text-gray-400">
-                                {{ .LanguageName }}
-                            </a>
+                    {{ if ne .Lang $currentLang }}
+                        {{ $langPrefix := "" }}
+                        {{ if ne .Lang $defaultLang }}
+                            {{ $langPrefix = printf "/%s" .Lang }}
                         {{ end }}
+                        <option value="{{ $langPrefix }}{{ $.Page.RelPermalink | strings.TrimPrefix (printf "/%s" $currentLang) }}">
+                            {{ .LanguageName }}
+                        </option>
                     {{ end }}
+                    {{ end }}
+                </select>
                 {{ end }}
             </nav>
 
@@ -66,43 +68,53 @@
                     </svg>
                 </button>
             </div>
-            
+
             {{ range index .Site.Data.navigation.nav $currentLang }}
                 <a href="{{ .url | relURL }}" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
                     {{ .name }}
                 </a>
             {{ end }}
 
-            <!-- Language Switcher -->
+            <!-- Language Dropdown for Mobile -->
             {{ if gt (len .Site.Languages) 1 }}
-            {{ range .Site.Languages }}
-            {{ if ne .Lang $currentLang }}
-                {{ $langPrefix := "" }}
-                {{ if ne .Lang $defaultLang }}
-                    {{ $langPrefix = printf "/%s" .Lang }}
+            <select title="lang" id="mobile-language-select" class="bg-gray-800 text-white py-2 px-4 rounded w-48">
+                <option value="{{ .Site.Language.Lang }}" selected disabled>🌐 {{ .Site.Language.LanguageName }}</option>
+                {{ range .Site.Languages }}
+                {{ if ne .Lang $currentLang }}
+                    {{ $langPrefix := "" }}
+                    {{ if ne .Lang $defaultLang }}
+                        {{ $langPrefix = printf "/%s" .Lang }}
+                    {{ end }}
+                    <option value="{{ $langPrefix }}{{ $.Page.RelPermalink | strings.TrimPrefix (printf "/%s" $currentLang) }}">
+                        {{ .LanguageName }}
+                    </option>
                 {{ end }}
-                <a href="{{ $langPrefix }}{{ $.Page.RelPermalink | strings.TrimPrefix (printf "/%s" $currentLang) }}"
-                   class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-                    {{ .LanguageName }}
-                </a>
-            {{ end }}
-        {{ end }}
-        
+                {{ end }}
+            </select>
             {{ end }}
         </nav>
     </header>
-    
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const closeMenu = document.getElementById('close-menu');
-        const menu = document.getElementById('menu');
 
-        menuToggle.addEventListener('click', function() {
-            menu.classList.toggle('hidden');
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+        document.getElementById('close-menu').addEventListener('click', function () {
+            document.getElementById('menu').classList.add('hidden');
         });
 
-        closeMenu.addEventListener('click', function() {
-            menu.classList.add('hidden');
+        // Language Selection Change
+        document.getElementById('language-select').addEventListener('change', function () {
+            if (this.value) {
+                window.location.href = this.value;
+            }
+        });
+
+        document.getElementById('mobile-language-select').addEventListener('change', function () {
+            if (this.value) {
+                window.location.href = this.value;
+            }
         });
     </script>
 </body>

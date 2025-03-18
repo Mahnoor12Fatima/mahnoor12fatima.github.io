@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hitchens on My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Hitchens on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Undoubtedly one of the great minds of our time, Christopher Hitchens challenged his readers to think deeply on topics of politics, religion, war, and science. This Jekyll theme is designed in his memory.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/6/63/Christopher_Hitchens_2008-04-24_001.jpg&#34; alt=&#34;Christopher Hitchens&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Photo by Fri Tanke and licensed under the &lt;a href=&#34;https://creativecommons.org/licenses/by/3.0/deed.en&#34;&gt;Creative Commons Attribution 3.0 Unported&lt;/a&gt; license.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;From &lt;a href=&#34;https://en.wikipedia.org/wiki/Christopher_Hitchens&#34;&gt;Wikipedia&lt;/a&gt;:&lt;/p&gt;&#xA;&lt;p&gt;Christopher Eric Hitchens (13 April 1949 – 15 December 2011) was an Anglo-American author, columnist, essayist, orator, religious and literary critic, social critic, and journalist. Hitchens was the author, co-author, editor or co-editor of over 30 books, including five collections of essays on culture, politics, and literature. A staple of public discourse, his confrontational style of debate made him both a lauded intellectual and a controversial public figure. He contributed to &lt;em&gt;New Statesman, The Nation, The Weekly Standard, The Atlantic, London Review of Books, The Times Literary Supplement, Slate, Free Inquiry&lt;/em&gt;, and &lt;em&gt;Vanity Fair&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>No Header</title>
+      <link>http://localhost:1313/blog/headers-with-style/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/headers-with-style/</guid>
+      <description>Feeling Responsive allows you to use all kinds of headers. This example shows no header at all. Just the navigation</description>
+    </item>
+    <item>
+      <title>No Header but Article Image</title>
+      <link>http://localhost:1313/blog/headers-with-no-style/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/headers-with-no-style/</guid>
+      <description>Feeling Responsive enables you to get the attention of visitors. If you don&amp;rsquo;t want to use a big header, use an image for the article instead</description>
+    </item>
+    <item>
+      <title>Now with Comments!</title>
+      <link>http://localhost:1313/blog/discussion/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/discussion/</guid>
+      <description>For a blog you need comments. Like all those other jekyll themes we baked in Disqus. It&amp;rsquo;s easy to set, it works and makes a static jekyll blog more dynamic.</description>
+    </item>
+    <item>
+      <title>Play Audio &amp; Video with mediaelement.js</title>
+      <link>http://localhost:1313/blog/video--music-player/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/video--music-player/</guid>
+      <description>Do you like music? Or are you a podcaster? Do you want to stream your videos in a nice player?</description>
+    </item>
+    <item>
+      <title>Wonderful Typography</title>
+      <link>http://localhost:1313/blog/reading-experience/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/reading-experience/</guid>
+      <description>Feeling Responsive uses Volkhov for headlines, Lato for everything else and if you are in need to show some code, it will be in Lucida Console or Monaco</description>
+    </item>
+  </channel>
+</rss>

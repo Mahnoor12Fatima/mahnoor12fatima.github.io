@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<body>
+
+    <div class="max-w-4xl mx-auto my-10 px-4">
+        
+        <!-- Blog Image -->
+        {{ with .Params.img }}
+        <div class="mb-6">
+            <img src="{{ . }}" alt="{{ $.Title }}" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+        {{ end }}
+
+        <!-- Category & Subcategory -->
+        <div class="text-sm uppercase tracking-wide text-gray-500 mb-1">
+              {{ with .Params.subcategory }} <span class="font-bold">{{ . }}</span>{{ end }}
+        </div>
+
+        <!-- Blog Title -->
+        <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
+
+        <!-- Blog Date -->
+        <p class="text-gray-500 text-sm mb-4">{{ .Date.Format "January 2, 2006" }}</p>
+
+        <!-- Blog Content -->
+        <div class="prose prose-lg text-gray-800">
+            {{ .Content }}
+        </div>
+
+        <!-- Back to Blog Button -->
+        <div class="mt-10">
+            <a href="/blog/" class="text-blue-600 font-medium hover:underline">&lt; Back to Blog</a>
+        </div>
+    </div>
+
+</body>
+
+{{ end }}

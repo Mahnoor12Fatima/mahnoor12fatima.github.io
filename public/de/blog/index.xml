@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on My New Hugo Site</title>
+    <link>http://localhost:1313/de/blog/</link>
+    <description>Recent content in Blogs on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <lastBuildDate>Wed, 14 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/de/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Audio &amp; Video mit mediaelement.js abspielen</title>
+      <link>http://localhost:1313/de/blog/video--music-player/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/blog/video--music-player/</guid>
+      <description>Magst du Musik? Oder bist du Podcaster? Möchtest du deine Videos in einem ansprechenden Player streamen?</description>
+    </item>
+    <item>
+      <title>Jetzt mit Kommentaren!</title>
+      <link>http://localhost:1313/de/blog/discussion/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/blog/discussion/</guid>
+      <description>Für einen Blog braucht man Kommentare. Wie bei all den anderen Jekyll-Themes haben wir Disqus integriert. Es ist einfach einzurichten, funktioniert und macht einen statischen Jekyll-Blog dynamischer.</description>
+    </item>
+    <item>
+      <title>Kein Header</title>
+      <link>http://localhost:1313/de/blog/headers-with-style/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/blog/headers-with-style/</guid>
+      <description>Feeling Responsive ermöglicht die Verwendung aller Arten von Headern. Dieses Beispiel zeigt überhaupt keinen Header – nur die Navigation.</description>
+    </item>
+    <item>
+      <title>Kein Header, aber ein Artikelbild</title>
+      <link>http://localhost:1313/de/blog/headers-with-no-style/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/blog/headers-with-no-style/</guid>
+      <description>Feeling Responsive ermöglicht es dir, die Aufmerksamkeit der Besucher zu gewinnen. Wenn du keinen großen Header verwenden möchtest, nutze stattdessen ein Bild für den Artikel.</description>
+    </item>
+    <item>
+      <title>Wunderbare Typografie</title>
+      <link>http://localhost:1313/de/blog/reading-experience/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/blog/reading-experience/</guid>
+      <description>Feeling Responsive verwendet Volkhov für Überschriften, Lato für alles andere, und wenn du Code anzeigen musst, wird er in Lucida Console oder Monaco dargestellt.</description>
+    </item>
+  </channel>
+</rss>

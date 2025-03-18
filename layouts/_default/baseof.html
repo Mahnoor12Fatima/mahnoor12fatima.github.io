@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/js/email.js"></script>
+
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@200;300;400;500;700&display=swap" rel="stylesheet">
@@ -13,14 +16,15 @@
 
     
 </head>
-<body class="bg-yellow-400">
+<body class="flex flex-col min-h-screen">
+    
     {{ partial "header.html" . }} <!-- Include header partial -->
 
-    <main class="pb-7" role="main">
+    <main class="flex-1 pb-7"> 
         {{ block "main" . }}{{ end }} <!-- Dynamic content inserted here -->
     </main>
 
     {{ partial "footer.html" . }} <!-- Include footer partial -->
 
-  </body>
+</body>
 </html>
