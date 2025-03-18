@@ -21,48 +21,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | My New Hugo Site</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
 </head>
 <body>
-    <header class="py-8">
-        <div class="container mx-auto text-center">
-            <nav class="flex justify-center space-x-4 text-sm">
+    <header class="py-4 bg-black text-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="/" class="text-lg font-bold">My New Hugo Site</a>
+            
+            
+            <nav class="hidden lg:flex lg:items-center lg:space-x-4 text-sm">
                 
                 
 
                 
-                
                     
                     
-                          
+                        
                     
-                    <a href="/" class="text-gray-600 hover:text-black">
+                    <a href="/" class="px-4 py-2 text-white hover:text-gray-400">
                         Home
                     </a>
                 
                     
                     
-                          
+                        
                     
-                    <a href="/about" class="text-gray-600 hover:text-black">
+                    <a href="/about" class="px-4 py-2 text-white hover:text-gray-400">
                         About
                     </a>
                 
                     
                     
-                          
+                        
                     
-                    <a href="https://github.com/patdryburgh/hitchens" class="text-gray-600 hover:text-black">
+                    <a href="https://github.com/patdryburgh/hitchens" class="px-4 py-2 text-white hover:text-gray-400">
                         Source
                     </a>
                 
                     
                     
-                          
+                        
                     
-                    <a href="https://patdryburgh.com/" class="text-gray-600 hover:text-black">
+                    <a href="https://patdryburgh.com/" class="px-4 py-2 text-white hover:text-gray-400">
                         Designer
                     </a>
                 
@@ -78,15 +80,85 @@
                                 
                             
                             <a href="/de/about/"
-                               class="underline px-2 text-gray-600 hover:text-black">
+                               class="px-4 py-2 text-white hover:text-gray-400">
                                 German
                             </a>
                         
                     
                 
             </nav>
+
+            
+            <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
         </div>
+
+        
+        <nav id="menu" class="hidden lg:hidden fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-4 text-sm w-full h-full">
+            <div class="w-full flex justify-between items-center px-4">
+                <a href="/" class="text-lg font-bold mx-auto">My New Hugo Site</a>
+                <button id="close-menu" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            
+                <a href="/" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+                    Home
+                </a>
+            
+                <a href="/about" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+                    About
+                </a>
+            
+                <a href="https://github.com/patdryburgh/hitchens" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+                    Source
+                </a>
+            
+                <a href="https://patdryburgh.com/" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+                    Designer
+                </a>
+            
+
+            
+            
+            
+            
+        
+            
+                
+                
+                    
+                
+                <a href="/de/about/"
+                   class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+                    German
+                </a>
+            
+        
+        
+            
+        </nav>
     </header>
+    
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeMenu = document.getElementById('close-menu');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', function() {
+            menu.classList.toggle('hidden');
+        });
+
+        closeMenu.addEventListener('click', function() {
+            menu.classList.add('hidden');
+        });
+    </script>
 </body>
 </html>
  

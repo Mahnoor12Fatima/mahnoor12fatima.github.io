@@ -5,26 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
 </head>
 <body>
-    <header class="py-8">
-        <div class="container mx-auto text-center">
-            <nav class="flex justify-center space-x-4 text-sm">
+    <header class="py-4 bg-black text-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="/" class="text-lg font-bold">{{ .Site.Title }}</a>
+            
+            <!-- Large Screen Navigation -->
+            <nav class="hidden lg:flex lg:items-center lg:space-x-4 text-sm">
                 {{ $currentLang := .Site.Language.Lang }}
                 {{ $defaultLang := .Site.Params.defaultContentLanguage | default "en" }}
 
-                <!-- Load Navigation for the Current Language -->
-                {{ range index site.Data.navigation.nav $currentLang }}
+                {{ range index .Site.Data.navigation.nav $currentLang }}
                     {{ $url := .url }}
                     {{ if eq $currentLang $defaultLang }}
-                        {{ $url = .url | relURL }}  <!-- Remove "/en/" for default language -->
+                        {{ $url = .url | relURL }}
                     {{ else }}
                         {{ $url = .url | absLangURL }}
                     {{ end }}
-                    <a href="{{ $url }}" class="text-gray-600 hover:text-black">
+                    <a href="{{ $url }}" class="px-4 py-2 text-white hover:text-gray-400">
                         {{ .name }}
                     </a>
                 {{ end }}
@@ -38,14 +40,70 @@
                                 {{ $langPrefix = printf "/%s" .Lang }}
                             {{ end }}
                             <a href="{{ $langPrefix }}{{ $.Page.RelPermalink | strings.TrimPrefix (printf "/%s" $currentLang) }}"
-                               class="underline px-2 text-gray-600 hover:text-black">
+                               class="px-4 py-2 text-white hover:text-gray-400">
                                 {{ .LanguageName }}
                             </a>
                         {{ end }}
                     {{ end }}
                 {{ end }}
             </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
         </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="menu" class="hidden lg:hidden fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-4 text-sm w-full h-full">
+            <div class="w-full flex justify-between items-center px-4">
+                <a href="/" class="text-lg font-bold mx-auto">{{ .Site.Title }}</a>
+                <button id="close-menu" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            {{ range index .Site.Data.navigation.nav $currentLang }}
+                <a href="{{ .url | relURL }}" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+                    {{ .name }}
+                </a>
+            {{ end }}
+
+            <!-- Language Switcher -->
+            {{ if gt (len .Site.Languages) 1 }}
+            {{ range .Site.Languages }}
+            {{ if ne .Lang $currentLang }}
+                {{ $langPrefix := "" }}
+                {{ if ne .Lang $defaultLang }}
+                    {{ $langPrefix = printf "/%s" .Lang }}
+                {{ end }}
+                <a href="{{ $langPrefix }}{{ $.Page.RelPermalink | strings.TrimPrefix (printf "/%s" $currentLang) }}"
+                   class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+                    {{ .LanguageName }}
+                </a>
+            {{ end }}
+        {{ end }}
+        
+            {{ end }}
+        </nav>
     </header>
+    
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeMenu = document.getElementById('close-menu');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', function() {
+            menu.classList.toggle('hidden');
+        });
+
+        closeMenu.addEventListener('click', function() {
+            menu.classList.add('hidden');
+        });
+    </script>
 </body>
 </html>

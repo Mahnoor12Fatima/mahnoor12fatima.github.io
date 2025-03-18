@@ -3,7 +3,7 @@
 
 <body>
 <div class="text-center main">
-    <h1 class="lg:text-7xl text-4xl font-medium mt-4 mx-4">
+    <h1 class="lg:text-7xl text-4xl font-medium mt-10 mx-4">
         {{ .Title }}
     </h1>
 
@@ -17,7 +17,7 @@
     {{ $paginator := .Paginate $blog }}
     
     <!-- Dynamic Heading -->
-    <h2 class="text-center text-4xl font-medium mt-30 mb-4">
+    <h2 class="text-center text-4xl font-medium mt-30 mt-10 mb-4">
         {{ if eq $paginator.PageNumber 1 }}
             {{ .Params.contents | default "Contents" }}
         {{ else }}
@@ -40,7 +40,7 @@
 
             <!-- Post Title -->
             <div class="w-full lg:w-8/12 text-left order-2 lg:order-1 ml-6 lg:ml-0">
-                <h3 class="text-2xl font-medium">
+                <h3 class="text-2xl  font-medium">
                     <a href="{{ .RelPermalink }}" class="text-black">{{ .Title }}</a>
                 </h3>
             </div>
