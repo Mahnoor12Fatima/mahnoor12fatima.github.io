@@ -33,7 +33,7 @@
 
                 <!-- Language Dropdown -->
                 {{ if gt (len .Site.Languages) 1 }}
-                <select id="language-select" class="bg-gray-800 text-white py-2 px-4 rounded">
+                <select title="lang" id="language-select" class="bg-gray-800 text-white py-2 px-4 rounded">
                     <option value="{{ .Site.Language.Lang }}" selected disabled>🌐 {{ .Site.Language.LanguageName }}</option>
                     {{ range .Site.Languages }}
                     {{ if ne .Lang $currentLang }}

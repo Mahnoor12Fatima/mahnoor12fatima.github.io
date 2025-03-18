@@ -13,22 +13,20 @@
     
 </head>
 <body>
-    <footer class="bg-black py-8 ">
-        <div class="w-full mx-auto ">
+    <footer class="bg-black py-8">
+        <div class="max-w-7xl mx-auto px-4">
             <!-- Navigation Links -->
-            <nav class="flex justify-center space-x-6">
+            <nav class="flex flex-wrap justify-center gap-4 md:gap-6">
                 {{ $menu := index .Site.Data.navigation.nav .Site.Language.Lang }}
                 {{ range $menu }}
-                <a href="{{ .url | relURL }}" class="text-white hover:text-black dark:hover:text-white transition">
-                    {{ .name }}
-                </a>
+                    <a href="{{ .url | relURL }}" class="text-white hover:text-gray-300 transition">
+                        {{ .name }}
+                    </a>
                 {{ end }}
             </nav>
     
-         
-    
             <!-- Copyright -->
-            <p class="text-center text-gray-500 dark:text-gray-400 text-sm mt-6">
+            <p class="text-center text-gray-500 text-sm mt-6">
                 &copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.
             </p>
         </div>
