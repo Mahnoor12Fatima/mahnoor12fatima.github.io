@@ -1,11 +1,11 @@
 {{ define "main" }}
-<section class="mx-auto p-6 my-8   max-w-4xl ">
-    <div class=" px-6 py-24 sm:py-32 lg:px-8">
+<section class="mx-auto p-6 my-8 max-w-4xl">
+    <div class="px-6 py-24 sm:py-32 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
-            <h2 class="text-4xl font-semibold tracking-tight  sm:text-5xl">
+            <h2 class="text-4xl font-semibold tracking-tight sm:text-5xl">
                 {{ .Title }}
             </h2>
-            <p class="mt-2 text-lg ">
+            <p class="mt-2 text-lg">
                 {{ .Params.description }}
             </p>
         </div>
@@ -14,52 +14,43 @@
             <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 gap-x-8">
                 {{ range .Params.fields }}
                 <div class="{{ if eq .type "textarea" }}sm:col-span-2{{ end }}">
-                    <label for="{{ .name }}" class="block text-sm font-semibold ">
+                    <label for="{{ .name }}" class="block text-sm font-semibold">
                         {{ .label }}
                     </label>
                     <div class="mt-2.5">
                         {{ if .has_country_select }}
                         <!-- Phone Number with Country Select -->
                         <div class="flex rounded-md country bg-white border border-gray-300 focus-within:ring-2 focus-within:ring-indigo-600">
-                            <select title="phone" id="country" name="country" class="w-20 appearance-none border-r border-gray-300 px-3 py-2 text-gray-500">
+                            <select title="phone" id="country" name="country" class="w-20 appearance-none border-r border-gray-300 px-3 py-2 text-gray-500" required>
                                 <option>US</option>
                                 <option>PK</option>
                                 <option>EU</option>
                             </select>
                             <input type="tel" name="{{ .name }}" id="{{ .name }}" placeholder="{{ .placeholder }}" 
-                                class="block w-full px-3 py-2 placeholder-gray-400 focus:ring-0 focus:outline-none">
+                                class="block w-full px-3 py-2 placeholder-gray-400 focus:ring-0 focus:outline-none" required>
                         </div>
                         {{ else if eq .type "textarea" }}
                         <!-- Textarea Field -->
                         <textarea name="{{ .name }}" id="{{ .name }}" rows="4" placeholder="{{ .placeholder }}" 
-                            class="block w-full rounded-md  px-3.5 py-2 text-base  border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-600">
-                        </textarea>
+                            class="block w-full rounded-md px-3.5 py-2 text-base border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-600" required></textarea>
                         {{ else }}
                         <!-- Input Fields -->
                         <input type="{{ .type }}" name="{{ .name }}" id="{{ .name }}" placeholder="{{ .placeholder }}" 
-                            class="block w-full rounded-md px-3.5 py-2 text-base  border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-600">
+                            class="block w-full rounded-md px-3.5 py-2 text-base border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-600" required>
                         {{ end }}
                     </div>
                 </div>
                 {{ end }}
             </div>
-
-          
-
+            
             <!-- Submit Button -->
-           <!-- Submit Button -->
-<!-- Submit Button -->
-<!-- Submit Button -->
-<div class="mt-10 contact">
-    <button type="submit" 
-        class="block w-full rounded-md px-3.5 py-2.5  text-sm font-semibold  shadow 
-         focus:ring-2 focus:ring-indigo-600">
-        {{ .Params.button_text }}
-    </button>
-</div>
-
-
-
+            <div class="mt-10 contact">
+                <button type="submit" 
+                    class="block w-full rounded-md px-3.5 py-2.5 text-sm font-semibold shadow 
+                     focus:ring-2 focus:ring-indigo-600">
+                    {{ .Params.button_text }}
+                </button>
+            </div>
         </form>
     </div>
 </section>

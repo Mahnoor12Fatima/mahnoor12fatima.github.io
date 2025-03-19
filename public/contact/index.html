@@ -278,13 +278,13 @@
 
     <main class="flex-1 pb-7"> 
         
-<section class="mx-auto p-6 my-8   max-w-4xl ">
-    <div class=" px-6 py-24 sm:py-32 lg:px-8">
+<section class="mx-auto p-6 my-8 max-w-4xl">
+    <div class="px-6 py-24 sm:py-32 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
-            <h2 class="text-4xl font-semibold tracking-tight  sm:text-5xl">
+            <h2 class="text-4xl font-semibold tracking-tight sm:text-5xl">
                 Contact
             </h2>
-            <p class="mt-2 text-lg ">
+            <p class="mt-2 text-lg">
                 Have questions? Get in touch with us!
             </p>
         </div>
@@ -293,96 +293,87 @@
             <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 gap-x-8">
                 
                 <div class="">
-                    <label for="first-name" class="block text-sm font-semibold ">
+                    <label for="first-name" class="block text-sm font-semibold">
                         First Name
                     </label>
                     <div class="mt-2.5">
                         
                         
                         <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" 
-                            class="block w-full rounded-md px-3.5 py-2 text-base  border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-600">
+                            class="block w-full rounded-md px-3.5 py-2 text-base border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-600" required>
                         
                     </div>
                 </div>
                 
                 <div class="">
-                    <label for="last-name" class="block text-sm font-semibold ">
+                    <label for="last-name" class="block text-sm font-semibold">
                         Last Name
                     </label>
                     <div class="mt-2.5">
                         
                         
                         <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" 
-                            class="block w-full rounded-md px-3.5 py-2 text-base  border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-600">
+                            class="block w-full rounded-md px-3.5 py-2 text-base border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-600" required>
                         
                     </div>
                 </div>
                 
                 <div class="">
-                    <label for="email" class="block text-sm font-semibold ">
+                    <label for="email" class="block text-sm font-semibold">
                         Email
                     </label>
                     <div class="mt-2.5">
                         
                         
                         <input type="email" name="email" id="email" placeholder="Enter your email" 
-                            class="block w-full rounded-md px-3.5 py-2 text-base  border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-600">
+                            class="block w-full rounded-md px-3.5 py-2 text-base border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-600" required>
                         
                     </div>
                 </div>
                 
                 <div class="">
-                    <label for="phone-number" class="block text-sm font-semibold ">
+                    <label for="phone-number" class="block text-sm font-semibold">
                         Phone Number
                     </label>
                     <div class="mt-2.5">
                         
                         
                         <div class="flex rounded-md country bg-white border border-gray-300 focus-within:ring-2 focus-within:ring-indigo-600">
-                            <select title="phone" id="country" name="country" class="w-20 appearance-none border-r border-gray-300 px-3 py-2 text-gray-500">
+                            <select title="phone" id="country" name="country" class="w-20 appearance-none border-r border-gray-300 px-3 py-2 text-gray-500" required>
                                 <option>US</option>
                                 <option>PK</option>
                                 <option>EU</option>
                             </select>
                             <input type="tel" name="phone-number" id="phone-number" placeholder="123-456-7890" 
-                                class="block w-full px-3 py-2 placeholder-gray-400 focus:ring-0 focus:outline-none">
+                                class="block w-full px-3 py-2 placeholder-gray-400 focus:ring-0 focus:outline-none" required>
                         </div>
                         
                     </div>
                 </div>
                 
                 <div class="sm:col-span-2">
-                    <label for="message" class="block text-sm font-semibold ">
+                    <label for="message" class="block text-sm font-semibold">
                         Message
                     </label>
                     <div class="mt-2.5">
                         
                         
                         <textarea name="message" id="message" rows="4" placeholder="Type your message here" 
-                            class="block w-full rounded-md  px-3.5 py-2 text-base  border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-600">
-                        </textarea>
+                            class="block w-full rounded-md px-3.5 py-2 text-base border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-600" required></textarea>
                         
                     </div>
                 </div>
                 
             </div>
-
-          
-
             
-           
-
-
-<div class="mt-10 contact">
-    <button type="submit" 
-        class="block w-full rounded-md px-3.5 py-2.5  text-sm font-semibold  shadow 
-         focus:ring-2 focus:ring-indigo-600">
-        Send Message
-    </button>
-</div>
-
-
-
+            
+            <div class="mt-10 contact">
+                <button type="submit" 
+                    class="block w-full rounded-md px-3.5 py-2.5 text-sm font-semibold shadow 
+                     focus:ring-2 focus:ring-indigo-600">
+                    Send Message
+                </button>
+            </div>
         </form>
     </div>
 </section>
