@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=59061&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | My New Hugo Site</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/js/email.js"></script>
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+  
+
+    
+</head>
+<body class="flex flex-col min-h-screen">
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | My New Hugo Site</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/email.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+</head>
+<body>
+    <header class="py-4   shadow-md">
+        <div class=" px-4 mx-auto flex justify-between items-center ">
+            <a href="/" class="text-lg font-bold">My New Hugo Site</a>
+
+            
+            <nav class="hidden lg:flex lg:items-center lg:space-x-1 text-sm"> 
+                
+                
+    
+                
+                
+                    
+                    
+                        
+                    
+                    <a href="/" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                        Home
+                    </a>
+                
+            
+                
+                    
+                    
+                        
+                    
+                    <a href="/about" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                        About
+                    </a>
+                
+            
+                
+                    
+                    
+                        
+                    
+                    <a href="/services" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                        Services
+                    </a>
+                
+            
+                
+                    
+                    
+                        
+                    
+                    <a href="/blog" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                        Blog
+                    </a>
+                
+            
+                
+                    
+                    
+                        
+                    
+                    <a href="https://github.com/" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                        References
+                    </a>
+                
+            
+                
+                    
+                    
+                        
+                    
+                    <a href="/faq" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                        FAQ
+                    </a>
+                
+            
+                
+                    
+                    
+                        
+                    
+                    <a href="/contact" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                        Contact
+                    </a>
+                
+            
+                
+            
+                
+            
+            <div class="relative group">
+                <button id="more-button" class="px-3 py-2 flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                    More ▼
+                </button>
+                <div id="dropdown-menu" class="absolute left-0 hidden group-hover:block shadow-lg rounded-md w-48">
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <a href="/impressum" class="block px-4 py-2 text-gray-700 dark:text-gray-300 ">
+                                Legal Notice
+                            </a>
+                        
+                    
+                        
+                            <a href="/datenschutz" class="block px-4 py-2 text-gray-700 dark:text-gray-300 ">
+                                Privacy Policy
+                            </a>
+                        
+                    
+                </div>
+            </div>
+            
+                
+                
+                <select title="lang" id="language-select" class="bg-gray-800 text-white py-2 px-4 rounded">
+                    <option value="en" selected disabled>🌐 English</option>
+                    
+                    
+                    
+                    
+                        
+                        
+                            
+                        
+                        <option value="/de/blog/">
+                            German
+                        </option>
+                    
+                    
+                </select>
+                
+    
+                
+                <button title="toggleDarkMode" id="dark-mode-toggle" onclick="toggleDarkMode()" class="ml-3">
+                    <svg id="dark-mode-icon" width="24px" height="24px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"
+                        class="transition-all duration-300 text-gray-700 dark:text-gray-300" fill="currentColor">
+                        <path d="M14,24A10,10,0,0,0,24,34V14A10,10,0,0,0,14,24Z"></path>
+                        <path d="M24,2A22,22,0,1,0,46,24,21.9,21.9,0,0,0,24,2ZM6,24A18.1,18.1,0,0,1,24,6v8a10,10,0,0,1,0,20v8A18.1,18.1,0,0,1,6,24Z"></path>
+                    </svg>
+                </button>
+            </nav>
+
+            
+           
+<button id="menu-toggle" title="menu-toggle" class="lg:hidden focus:outline-none">
+    <svg class="w-6 h-6 text-[#002244] dark:text-[#b2f5ea]" fill="none" stroke="currentColor" 
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+    </svg>
+</button>
+
+        </div>
+
+        
+       
+<nav id="menu" class="hidden fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-4 text-sm w-full h-full">
+    
+    <div class="w-full flex justify-between items-center px-4">
+      
+        
+        <button id="close-menu" title="Close Menu" class="text-white focus:outline-none absolute top-4 right-4">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+
+    
+        <a href="/" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+            Home
+        </a>
+    
+        <a href="/about" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+            About
+        </a>
+    
+        <a href="/services" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+            Services
+        </a>
+    
+        <a href="/blog" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+            Blog
+        </a>
+    
+        <a href="https://github.com/" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+            References
+        </a>
+    
+        <a href="/faq" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+            FAQ
+        </a>
+    
+        <a href="/contact" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+            Contact
+        </a>
+    
+        <a href="/impressum" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+            Legal Notice
+        </a>
+    
+        <a href="/datenschutz" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+            Privacy Policy
+        </a>
+    
+</nav>
+
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            document.getElementById('menu-toggle').addEventListener('click', function () {
+                document.getElementById('menu').classList.toggle('hidden');
+            });
+    
+            document.getElementById('close-menu').addEventListener('click', function () {
+                document.getElementById('menu').classList.add('hidden');
+            });
+    
+            
+            document.getElementById('language-select').addEventListener('change', function () {
+                if (this.value) {
+                    window.location.href = this.value;
+                }
+            });
+    
+            document.getElementById('mobile-language-select').addEventListener('change', function () {
+                if (this.value) {
+                    window.location.href = this.value;
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
+ 
+
+    <main class="flex-1 pb-7"> 
+        
+
+<body>
+    <div class="container mx-auto px-32 my-4">
+        
+        <h1 class="styled-heading text-center font-bold text-lg md:text-2xl lg:text-3xl mb-4">Blog</h1>
+       
+        <div class="pagination-container">
+            
+            
+
+            
+            <div class="post-item flex flex-col md:flex-row gap-4 pb-8 mb-8 border-b">
+                
+                
+                <div class="w-full md:w-3/12">
+                    <img src="/imgs/unsplash_brooklyn-bridge-thumb.jpg" alt="Blogs" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                
+
+                
+                <div class="w-full md:w-9/12">
+                    
+                    <div class="text-sm uppercase tracking-wide text-gray-500 mb-1">
+                        <span class="font-bold">Design</span>
+                         – <span class="font-bold">Headers With Style</span>
+                    </div>
+
+                    
+                    <h3 class="text-xl md:text-2xl font-bold mb-2">
+                        <a href="/blog/headers-with-style/" class="text-black hover:underline">No Header</a>
+                    </h3>
+
+                    
+                    <p class="text-gray-600 mb-2 text-sm md:text-base">
+                        Feeling Responsive allows you to use all kinds of headers. This example shows no header at all. Just the navigation
+                    </p>
+
+                    
+                    <a href="/blog/headers-with-style/" class="text-blue-600 font-medium hover:underline">Read More ›</a>
+                </div>
+            </div>
+            
+            <div class="post-item flex flex-col md:flex-row gap-4 pb-8 mb-8 border-b">
+                
+                
+                <div class="w-full md:w-3/12">
+                    <img src="/imgs/mediaplayer_js-thumb.jpg" alt="Blogs" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                
+
+                
+                <div class="w-full md:w-9/12">
+                    
+                    <div class="text-sm uppercase tracking-wide text-gray-500 mb-1">
+                        <span class="font-bold">Design</span>
+                         – <span class="font-bold">Headers With no Style</span>
+                    </div>
+
+                    
+                    <h3 class="text-xl md:text-2xl font-bold mb-2">
+                        <a href="/blog/headers-with-no-style/" class="text-black hover:underline">No Header but Article Image</a>
+                    </h3>
+
+                    
+                    <p class="text-gray-600 mb-2 text-sm md:text-base">
+                        Feeling Responsive enables you to get the attention of visitors. If you don&rsquo;t want to use a big header, use an …
+                    </p>
+
+                    
+                    <a href="/blog/headers-with-no-style/" class="text-blue-600 font-medium hover:underline">Read More ›</a>
+                </div>
+            </div>
+            
+            <div class="post-item flex flex-col md:flex-row gap-4 pb-8 mb-8 border-b">
+                
+                
+                <div class="w-full md:w-3/12">
+                    <img src="/imgs/typewriter-thumb.jpg" alt="Blogs" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                
+
+                
+                <div class="w-full md:w-9/12">
+                    
+                    <div class="text-sm uppercase tracking-wide text-gray-500 mb-1">
+                        <span class="font-bold">Design</span>
+                         – <span class="font-bold">Discussion</span>
+                    </div>
+
+                    
+                    <h3 class="text-xl md:text-2xl font-bold mb-2">
+                        <a href="/blog/discussion/" class="text-black hover:underline">Now with Comments!</a>
+                    </h3>
+
+                    
+                    <p class="text-gray-600 mb-2 text-sm md:text-base">
+                        For a blog you need comments. Like all those other jekyll themes we baked in Disqus. It&rsquo;s easy to set, it works …
+                    </p>
+
+                    
+                    <a href="/blog/discussion/" class="text-blue-600 font-medium hover:underline">Read More ›</a>
+                </div>
+            </div>
+            
+
+            
+            
+            <div class="pagination-nav mt-10 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 text-center">
+                
+                <a href="/blog/page/2/" class="text-black font-medium text-lg px-4 py-2 hover:underline">
+                    &lt; Older Posts
+                </a>
+                
+
+                <div class="text-center font-medium text-sm md:text-base">
+                    1 of 2
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+ 
+    </main>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | My New Hugo Site</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+
+    
+</head>
+<body>
+    <footer class=" py-8">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <nav class="flex flex-wrap justify-center gap-4 md:gap-6">
+                
+                
+                    <a href="/" class=" hover:text-gray-300 transition">
+                        Home
+                    </a>
+                
+                    <a href="/about" class=" hover:text-gray-300 transition">
+                        About
+                    </a>
+                
+                    <a href="/services" class=" hover:text-gray-300 transition">
+                        Services
+                    </a>
+                
+                    <a href="/blog" class=" hover:text-gray-300 transition">
+                        Blog
+                    </a>
+                
+                    <a href="https://github.com/" class=" hover:text-gray-300 transition">
+                        References
+                    </a>
+                
+                    <a href="/faq" class=" hover:text-gray-300 transition">
+                        FAQ
+                    </a>
+                
+                    <a href="/contact" class=" hover:text-gray-300 transition">
+                        Contact
+                    </a>
+                
+                    <a href="/impressum" class=" hover:text-gray-300 transition">
+                        Legal Notice
+                    </a>
+                
+                    <a href="/datenschutz" class=" hover:text-gray-300 transition">
+                        Privacy Policy
+                    </a>
+                
+            </nav>
+    
+            
+            <p class="text-center text-gray-500 text-sm mt-6">
+                &copy; 2025 My New Hugo Site. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    
+    
+
+    
+</body>
+</html>
+ 
+
+</body>
+</html>

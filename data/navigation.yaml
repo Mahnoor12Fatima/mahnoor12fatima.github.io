@@ -6,28 +6,50 @@ nav:
       url: "/"
     - name: "About"
       url: "/about"
+    - name: "Services"
+      url: "/services"
     - name: "Blog"
       url: "/blog"
+    - name: "References"
+      url: "https://github.com/"
+    - name: "FAQ"
+      url: "/faq"
     - name: "Contact"
       url: "/contact"
-    - name: "Source"
-      url: "https://github.com/patdryburgh/hitchens"
-    - name: "Designer"
-      url: "https://patdryburgh.com/"
+    - name: "Legal Notice"
+      url: "/impressum"
+      category: "more"
+    - name: "Privacy Policy"
+      url: "/datenschutz"
+      category: "more"
+
+
 
   de:
     - name: "Startseite"
-      url: "/de/"
+      url: "/"
     - name: "Über uns"
-      url: "/de/about"
+      url: "/about"
+    - name: "Dienstleistungen"
+      url: "/services"
     - name: "Blog"
-      url: "/de/blog"
+      url: "/blog"
+    - name: "Referenzen"
+      url: "https://github.com/"
+    - name: "FAQ"
+      url: "/faq"
     - name: "Kontakt"
       url: "/contact"
-    - name: "Quelle"
-      url: "https://github.com/patdryburgh/hitchens"
-    - name: "Designer"
-      url: "https://patdryburgh.com/"
+    - name: "Impressum"
+      url: "/impressum"
+      category: "mehr"
+    - name: "Datenschutz"
+      url: "/datenschutz"
+      category: "mehr"
+
+
+
+
 
 pagination:
   en:

@@ -13,13 +13,13 @@
     
 </head>
 <body>
-    <footer class="bg-black py-8">
+    <footer class=" py-8">
         <div class="max-w-7xl mx-auto px-4">
             <!-- Navigation Links -->
             <nav class="flex flex-wrap justify-center gap-4 md:gap-6">
                 {{ $menu := index .Site.Data.navigation.nav .Site.Language.Lang }}
                 {{ range $menu }}
-                    <a href="{{ .url | relURL }}" class="text-white hover:text-gray-300 transition">
+                    <a href="{{ .url | relURL }}" class=" hover:text-gray-300 transition">
                         {{ .name }}
                     </a>
                 {{ end }}

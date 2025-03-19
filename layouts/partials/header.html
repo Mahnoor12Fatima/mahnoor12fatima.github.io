@@ -5,32 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/email.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
 </head>
 <body>
-    <header class="py-4 bg-black text-white shadow-md">
-        <div class="container mx-auto flex justify-between items-center px-4">
+    <header class="py-4   shadow-md">
+        <div class=" px-4 mx-auto flex justify-between items-center ">
             <a href="/" class="text-lg font-bold">{{ .Site.Title }}</a>
 
             <!-- Desktop Navigation -->
-            <nav class="hidden lg:flex lg:items-center lg:space-x-4 text-sm">
+            <nav class="hidden lg:flex lg:items-center lg:space-x-1 text-sm"> <!-- Reduced space -->
                 {{ $currentLang := .Site.Language.Lang }}
                 {{ $defaultLang := .Site.Params.defaultContentLanguage | default "en" }}
-
+    
                 {{ range index .Site.Data.navigation.nav $currentLang }}
+                {{ if not (eq .category "more") }}
                     {{ $url := .url }}
                     {{ if eq $currentLang $defaultLang }}
                         {{ $url = .url | relURL }}
                     {{ else }}
                         {{ $url = .url | absLangURL }}
                     {{ end }}
-                    <a href="{{ $url }}" class="px-4 py-2 text-white hover:text-gray-400">
+                    <a href="{{ $url }}" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
                         {{ .name }}
                     </a>
                 {{ end }}
-
+            {{ end }}
+            <div class="relative group">
+                <button id="more-button" class="px-3 py-2 flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                    More ▼
+                </button>
+                <div id="dropdown-menu" class="absolute left-0 hidden group-hover:block shadow-lg rounded-md w-48">
+                    {{ range index .Site.Data.navigation.nav $currentLang }}
+                        {{ if eq .category "more" }}
+                            <a href="{{ .url }}" class="block px-4 py-2 text-gray-700 dark:text-gray-300 ">
+                                {{ .name }}
+                            </a>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+            
                 <!-- Language Dropdown -->
                 {{ if gt (len .Site.Languages) 1 }}
                 <select title="lang" id="language-select" class="bg-gray-800 text-white py-2 px-4 rounded">
@@ -48,74 +65,76 @@
                     {{ end }}
                 </select>
                 {{ end }}
+    
+                <!-- Dark Mode Toggle -->
+                <button title="toggleDarkMode" id="dark-mode-toggle" onclick="toggleDarkMode()" class="ml-3">
+                    <svg id="dark-mode-icon" width="24px" height="24px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"
+                        class="transition-all duration-300 text-gray-700 dark:text-gray-300" fill="currentColor">
+                        <path d="M14,24A10,10,0,0,0,24,34V14A10,10,0,0,0,14,24Z"></path>
+                        <path d="M24,2A22,22,0,1,0,46,24,21.9,21.9,0,0,0,24,2ZM6,24A18.1,18.1,0,0,1,24,6v8a10,10,0,0,1,0,20v8A18.1,18.1,0,0,1,6,24Z"></path>
+                    </svg>
+                </button>
             </nav>
 
             <!-- Mobile Menu Button -->
-            <button id="menu-toggle" title="menu-toggle" class="lg:hidden text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
+           <!-- Mobile Menu Button -->
+<button id="menu-toggle" title="menu-toggle" class="lg:hidden focus:outline-none">
+    <svg class="w-6 h-6 text-[#002244] dark:text-[#b2f5ea]" fill="none" stroke="currentColor" 
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+    </svg>
+</button>
+
         </div>
 
         <!-- Mobile Navigation -->
-        <nav id="menu" class="hidden lg:hidden fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-4 text-sm w-full h-full">
-            <div class="w-full flex justify-between items-center px-4">
-                <a href="/" class="text-lg font-bold mx-auto">{{ .Site.Title }}</a>
-                <button title="cross" id="close-menu" class="text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
-            </div>
+       <!-- Mobile Navigation -->
+<nav id="menu" class="hidden fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-4 text-sm w-full h-full">
+    <!-- Mobile Header -->
+    <div class="w-full flex justify-between items-center px-4">
+      
+        <!-- 🔥 FIX: Ensure close button is inside the `menu` div -->
+        <button id="close-menu" title="Close Menu" class="text-white focus:outline-none absolute top-4 right-4">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
 
-            {{ range index .Site.Data.navigation.nav $currentLang }}
-                <a href="{{ .url | relURL }}" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-                    {{ .name }}
-                </a>
-            {{ end }}
+    {{ range index .Site.Data.navigation.nav $currentLang }}
+        <a href="{{ .url | relURL }}" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+            {{ .name }}
+        </a>
+    {{ end }}
+</nav>
 
-            <!-- Language Dropdown for Mobile -->
-            {{ if gt (len .Site.Languages) 1 }}
-            <select title="lang" id="mobile-language-select" class="bg-gray-800 text-white py-2 px-4 rounded w-48">
-                <option value="{{ .Site.Language.Lang }}" selected disabled>🌐 {{ .Site.Language.LanguageName }}</option>
-                {{ range .Site.Languages }}
-                {{ if ne .Lang $currentLang }}
-                    {{ $langPrefix := "" }}
-                    {{ if ne .Lang $defaultLang }}
-                        {{ $langPrefix = printf "/%s" .Lang }}
-                    {{ end }}
-                    <option value="{{ $langPrefix }}{{ $.Page.RelPermalink | strings.TrimPrefix (printf "/%s" $currentLang) }}">
-                        {{ .LanguageName }}
-                    </option>
-                {{ end }}
-                {{ end }}
-            </select>
-            {{ end }}
-        </nav>
     </header>
 
     <script>
-        // Mobile Menu Toggle
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            document.getElementById('menu').classList.toggle('hidden');
-        });
-        document.getElementById('close-menu').addEventListener('click', function () {
-            document.getElementById('menu').classList.add('hidden');
-        });
-
-        // Language Selection Change
-        document.getElementById('language-select').addEventListener('change', function () {
-            if (this.value) {
-                window.location.href = this.value;
-            }
-        });
-
-        document.getElementById('mobile-language-select').addEventListener('change', function () {
-            if (this.value) {
-                window.location.href = this.value;
-            }
+        document.addEventListener("DOMContentLoaded", function() {
+            // Mobile Menu Toggle
+            document.getElementById('menu-toggle').addEventListener('click', function () {
+                document.getElementById('menu').classList.toggle('hidden');
+            });
+    
+            document.getElementById('close-menu').addEventListener('click', function () {
+                document.getElementById('menu').classList.add('hidden');
+            });
+    
+            // Language Selection Change
+            document.getElementById('language-select').addEventListener('change', function () {
+                if (this.value) {
+                    window.location.href = this.value;
+                }
+            });
+    
+            document.getElementById('mobile-language-select').addEventListener('change', function () {
+                if (this.value) {
+                    window.location.href = this.value;
+                }
+            });
         });
     </script>
+    
 </body>
 </html>

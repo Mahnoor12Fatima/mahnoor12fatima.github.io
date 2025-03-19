@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on My New Hugo Site</title>
+    <link>http://localhost:59061/</link>
+    <description>Recent content in Hugo on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:59061/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:59061/about/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:59061/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:59061/contact/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:59061/contact/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Datenschutz</title>
+      <link>http://localhost:59061/datenschutz/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:59061/datenschutz/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FAQ</title>
+      <link>http://localhost:59061/faq/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:59061/faq/</guid>
+      <description>&lt;p&gt;this is FAQ&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Impressum</title>
+      <link>http://localhost:59061/impressum/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:59061/impressum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Services</title>
+      <link>http://localhost:59061/services/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:59061/services/</guid>
+      <description>&lt;p&gt;this is service&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>No Header</title>
+      <link>http://localhost:59061/blog/headers-with-style/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:59061/blog/headers-with-style/</guid>
+      <description>Feeling Responsive allows you to use all kinds of headers. This example shows no header at all. Just the navigation</description>
+    </item>
+    <item>
+      <title>No Header but Article Image</title>
+      <link>http://localhost:59061/blog/headers-with-no-style/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:59061/blog/headers-with-no-style/</guid>
+      <description>Feeling Responsive enables you to get the attention of visitors. If you don&amp;rsquo;t want to use a big header, use an image for the article instead</description>
+    </item>
+    <item>
+      <title>Now with Comments!</title>
+      <link>http://localhost:59061/blog/discussion/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:59061/blog/discussion/</guid>
+      <description>For a blog you need comments. Like all those other jekyll themes we baked in Disqus. It&amp;rsquo;s easy to set, it works and makes a static jekyll blog more dynamic.</description>
+    </item>
+    <item>
+      <title>Play Audio &amp; Video with mediaelement.js</title>
+      <link>http://localhost:59061/blog/video--music-player/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:59061/blog/video--music-player/</guid>
+      <description>Do you like music? Or are you a podcaster? Do you want to stream your videos in a nice player?</description>
+    </item>
+    <item>
+      <title>Wonderful Typography</title>
+      <link>http://localhost:59061/blog/reading-experience/</link>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:59061/blog/reading-experience/</guid>
+      <description>Feeling Responsive uses Volkhov for headlines, Lato for everything else and if you are in need to show some code, it will be in Lucida Console or Monaco</description>
+    </item>
+  </channel>
+</rss>
