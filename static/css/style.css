@@ -171,21 +171,27 @@ body.dark #menu-toggle svg {
 }
 input{
     background-color: #002244 ;
+    color: white;
 }
 body.dark input{
     background-color: #b2f5ea ;
+    color: black;
 }
 textarea{
     background-color: #002244 ;
+    color: white;
 }
 body.dark textarea{
     background-color: #b2f5ea ;
+    color: black;
 }
 .country{
     background-color: #002244 ;
+    color: white;
 }
 body.dark .country{
     background-color: #b2f5ea ;
+    color: black;
 }
 
 /* Dark Mode Button */
