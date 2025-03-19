@@ -1,12 +1,12 @@
 (function(){
-    emailjs.init("Dfh0A1Xz9-jQgaGs9"); // Replace with your EmailJS Public Key
+    emailjs.init("_C0_dxDNUivISN_BA"); // Replace with your EmailJS Public Key
 })();
 
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent default form submission
 
-        emailjs.sendForm("service_ulhmi44", "template_kukmhdd", this)
+        emailjs.sendForm("service_0xole5s", "template_axgk2gb", this)
             .then(function() {
                 alert("Message sent successfully!");
                 document.getElementById("contact-form").reset();
