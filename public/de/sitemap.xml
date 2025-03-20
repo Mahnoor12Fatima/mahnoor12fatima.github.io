@@ -2,208 +2,208 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:50734/de/services/</loc>
+    <loc>http://localhost:1313/de/services/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/services/"
+                href="http://localhost:1313/services/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/services/"
+                href="http://localhost:1313/de/services/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/faq/</loc>
+    <loc>http://localhost:1313/de/faq/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/faq/"
+                href="http://localhost:1313/faq/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/faq/"
+                href="http://localhost:1313/de/faq/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/</loc>
+    <loc>http://localhost:1313/de/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/"
+                href="http://localhost:1313/de/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/contact/</loc>
+    <loc>http://localhost:1313/de/contact/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/contact/"
+                href="http://localhost:1313/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/contact/"
+                href="http://localhost:1313/de/contact/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/references/</loc>
+    <loc>http://localhost:1313/de/references/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/references/"
+                href="http://localhost:1313/references/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/references/"
+                href="http://localhost:1313/de/references/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/about/</loc>
+    <loc>http://localhost:1313/de/about/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/about/"
+                href="http://localhost:1313/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/about/"
+                href="http://localhost:1313/de/about/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/blog/video--music-player/</loc>
+    <loc>http://localhost:1313/de/blog/video--music-player/</loc>
     <lastmod>2024-02-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/blog/video--music-player/"
+                href="http://localhost:1313/blog/video--music-player/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/blog/video--music-player/"
+                href="http://localhost:1313/de/blog/video--music-player/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/blog/</loc>
+    <loc>http://localhost:1313/de/blog/</loc>
     <lastmod>2024-02-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/blog/"
+                href="http://localhost:1313/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/blog/"
+                href="http://localhost:1313/de/blog/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/blog/discussion/</loc>
+    <loc>http://localhost:1313/de/blog/discussion/</loc>
     <lastmod>2024-02-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/blog/discussion/"
+                href="http://localhost:1313/blog/discussion/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/blog/discussion/"
+                href="http://localhost:1313/de/blog/discussion/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/blog/headers-with-style/</loc>
+    <loc>http://localhost:1313/de/blog/headers-with-style/</loc>
     <lastmod>2024-02-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/blog/headers-with-style/"
+                href="http://localhost:1313/blog/headers-with-style/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/blog/headers-with-style/"
+                href="http://localhost:1313/de/blog/headers-with-style/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/blog/headers-with-no-style/</loc>
+    <loc>http://localhost:1313/de/blog/headers-with-no-style/</loc>
     <lastmod>2024-02-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/blog/headers-with-no-style/"
+                href="http://localhost:1313/blog/headers-with-no-style/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/blog/headers-with-no-style/"
+                href="http://localhost:1313/de/blog/headers-with-no-style/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/blog/reading-experience/</loc>
+    <loc>http://localhost:1313/de/blog/reading-experience/</loc>
     <lastmod>2024-02-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/blog/reading-experience/"
+                href="http://localhost:1313/blog/reading-experience/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/blog/reading-experience/"
+                href="http://localhost:1313/de/blog/reading-experience/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/categories/</loc>
+    <loc>http://localhost:1313/de/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/categories/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/categories/"
+                href="http://localhost:1313/de/categories/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/datenschutz/</loc>
+    <loc>http://localhost:1313/de/datenschutz/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/datenschutz/"
+                href="http://localhost:1313/datenschutz/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/datenschutz/"
+                href="http://localhost:1313/de/datenschutz/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/impressum/</loc>
+    <loc>http://localhost:1313/de/impressum/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/impressum/"
+                href="http://localhost:1313/impressum/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/impressum/"
+                href="http://localhost:1313/de/impressum/"
                 />
   </url><url>
-    <loc>http://localhost:50734/de/tags/</loc>
+    <loc>http://localhost:1313/de/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:50734/tags/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:50734/de/tags/"
+                href="http://localhost:1313/de/tags/"
                 />
   </url>
 </urlset>

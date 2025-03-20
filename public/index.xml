@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on My New Hugo Site</title>
-    <link>http://localhost:50734/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Hugo on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:50734/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://localhost:50734/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50734/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description></description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:50734/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50734/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description></description>
     </item>
     <item>
       <title>Datenschutz</title>
-      <link>http://localhost:50734/datenschutz/</link>
+      <link>http://localhost:1313/datenschutz/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50734/datenschutz/</guid>
+      <guid>http://localhost:1313/datenschutz/</guid>
       <description></description>
     </item>
     <item>
       <title>FAQ</title>
-      <link>http://localhost:50734/faq/</link>
+      <link>http://localhost:1313/faq/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50734/faq/</guid>
+      <guid>http://localhost:1313/faq/</guid>
       <description>&lt;p&gt;this is FAQ&lt;/p&gt;</description>
     </item>
     <item>
       <title>Impressum</title>
-      <link>http://localhost:50734/impressum/</link>
+      <link>http://localhost:1313/impressum/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50734/impressum/</guid>
+      <guid>http://localhost:1313/impressum/</guid>
       <description></description>
     </item>
     <item>
       <title>References</title>
-      <link>http://localhost:50734/references/</link>
+      <link>http://localhost:1313/references/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50734/references/</guid>
+      <guid>http://localhost:1313/references/</guid>
       <description>&lt;p&gt;this is reference&lt;/p&gt;</description>
     </item>
     <item>
       <title>Services</title>
-      <link>http://localhost:50734/services/</link>
+      <link>http://localhost:1313/services/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50734/services/</guid>
+      <guid>http://localhost:1313/services/</guid>
       <description>&lt;p&gt;this is service&lt;/p&gt;</description>
     </item>
     <item>
       <title>No Header</title>
-      <link>http://localhost:50734/blog/headers-with-style/</link>
+      <link>http://localhost:1313/blog/headers-with-style/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50734/blog/headers-with-style/</guid>
+      <guid>http://localhost:1313/blog/headers-with-style/</guid>
       <description>Feeling Responsive allows you to use all kinds of headers. This example shows no header at all. Just the navigation</description>
     </item>
     <item>
       <title>No Header but Article Image</title>
-      <link>http://localhost:50734/blog/headers-with-no-style/</link>
+      <link>http://localhost:1313/blog/headers-with-no-style/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50734/blog/headers-with-no-style/</guid>
+      <guid>http://localhost:1313/blog/headers-with-no-style/</guid>
       <description>Feeling Responsive enables you to get the attention of visitors. If you don&amp;rsquo;t want to use a big header, use an image for the article instead</description>
     </item>
     <item>
       <title>Now with Comments!</title>
-      <link>http://localhost:50734/blog/discussion/</link>
+      <link>http://localhost:1313/blog/discussion/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50734/blog/discussion/</guid>
+      <guid>http://localhost:1313/blog/discussion/</guid>
       <description>For a blog you need comments. Like all those other jekyll themes we baked in Disqus. It&amp;rsquo;s easy to set, it works and makes a static jekyll blog more dynamic.</description>
     </item>
     <item>
       <title>Play Audio &amp; Video with mediaelement.js</title>
-      <link>http://localhost:50734/blog/video--music-player/</link>
+      <link>http://localhost:1313/blog/video--music-player/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50734/blog/video--music-player/</guid>
+      <guid>http://localhost:1313/blog/video--music-player/</guid>
       <description>Do you like music? Or are you a podcaster? Do you want to stream your videos in a nice player?</description>
     </item>
     <item>
       <title>Wonderful Typography</title>
-      <link>http://localhost:50734/blog/reading-experience/</link>
+      <link>http://localhost:1313/blog/reading-experience/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50734/blog/reading-experience/</guid>
+      <guid>http://localhost:1313/blog/reading-experience/</guid>
       <description>Feeling Responsive uses Volkhov for headlines, Lato for everything else and if you are in need to show some code, it will be in Lucida Console or Monaco</description>
     </item>
   </channel>

@@ -23,26 +23,35 @@
 })();
 
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contact-form");
-    //const body = document.body;
-    const moreButton = document.getElementById("more-button");
+   const moreButton = document.getElementById("more-button");
     const dropdownMenu = document.getElementById("dropdown-menu");
 
-    // ✅ Prevent multiple event listeners
-    if (!form.dataset.listener) {
-        form.dataset.listener = "true"; // Flag to prevent duplicate listeners
+    const form = document.getElementById("contact-form");
 
-        form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent default form submission
+    if (form) {
+        console.log("✅ Contact form found"); // Debugging check
 
-            emailjs.sendForm("service_0xole5s", "template_axgk2gb", this)
-                .then(function () {
-                    alert("Message sent successfully!");
-                    form.reset();
-                }, function (error) {
-                    alert("Failed to send message: " + error.text);
-                });
-        });
+        // ✅ Prevent duplicate event listeners
+        if (!form.dataset.listener) {
+            form.dataset.listener = "true";
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent default form submission
+                console.log("📩 Sending message..."); // Debugging check
+
+                emailjs.sendForm("service_ulhmi44", "template_kukmhdd", this)
+                    .then(function (response) {
+                        console.log("✅ Message sent successfully!", response);
+                        alert("Message sent successfully!");
+                        form.reset();
+                    }, function (error) {
+                        console.error("❌ Failed to send message", error);
+                        alert("Failed to send message: " + error.text);
+                    });
+            });
+        }
+    } else {
+        console.error("❌ Contact form NOT found"); // Debugging check
     }
 
 
@@ -61,5 +70,36 @@ document.addEventListener("DOMContentLoaded", function () {
                 moreButton.classList.remove("active");
             }
         });
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+
+    if (form) {
+        console.log("✅ Contact form found"); // Debugging check
+
+        // ✅ Prevent duplicate event listeners
+        if (!form.dataset.listener) {
+            form.dataset.listener = "true";
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent default form submission
+                console.log("📩 Sending message..."); // Debugging check
+
+                emailjs.sendForm("service_0xole5s", "template_axgk2gb", this)
+                    .then(function (response) {
+                        console.log("✅ Message sent successfully!", response);
+                        alert("Message sent successfully!");
+                        form.reset();
+                    }, function (error) {
+                        console.error("❌ Failed to send message", error);
+                        alert("Failed to send message: " + error.text);
+                    });
+            });
+        }
+    } else {
+        console.error("❌ Contact form NOT found"); // Debugging check
     }
 });
