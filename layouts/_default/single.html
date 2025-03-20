@@ -2,14 +2,15 @@
 
 <body>
 
-    <div class="max-w-4xl mx-auto my-10 px-4">
+    <div class="max-w-4xl mx-auto my-10 lg:px-4 px-12">
         
         <!-- Blog Image -->
         {{ with .Params.img }}
-        <div class="mb-6">
-            <img src="{{ . }}" alt="{{ $.Title }}" class="w-full h-auto rounded-lg shadow-lg">
+        <div class="mb-6 flex ">
+            <img src="{{ . }}" alt="{{ $.Title }}" class="max-w-full h-auto rounded-lg shadow-lg">
         </div>
         {{ end }}
+        
 
         <!-- Category & Subcategory -->
         <div class="text-sm uppercase tracking-wide text-gray-500 mb-1">
