@@ -1,7 +1,16 @@
 (function () {
-    emailjs.init("_C0_dxDNUivISN_BA"); // Replace with your EmailJS Public Key
+    emailjs.init("Dfh0A1Xz9-jQgaGs9"); // Replace with your EmailJS Public Key
 })();
+window.toggleDarkMode = function () {
+    const body = document.body;
+    body.classList.toggle("dark");
 
+    if (body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+};
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contact-form");
     const body = document.body;
@@ -15,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         form.addEventListener("submit", function (event) {
             event.preventDefault(); // Prevent default form submission
 
-            emailjs.sendForm("service_0xole5s", "template_axgk2gb", this)
+            emailjs.sendForm("service_ulhmi44", "template_kukmhdd", this)
                 .then(function () {
                     alert("Message sent successfully!");
                     form.reset();
@@ -24,23 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
         });
     }
-
-    // ✅ Dark Mode
-    if (localStorage.getItem("theme") === "dark") {
-        body.classList.add("dark");
-    }
-
-    window.toggleDarkMode = function () {
-        body.classList.toggle("dark");
-
-        if (body.classList.contains("dark")) {
-            localStorage.setItem("theme", "dark");
-            console.log("Dark mode enabled");
-        } else {
-            localStorage.setItem("theme", "light");
-            console.log("Light mode enabled");
+    document.addEventListener("DOMContentLoaded", function () {
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark");
         }
-    };
+    });
+
 
     // ✅ Dropdown Menu
     if (moreButton && dropdownMenu) {

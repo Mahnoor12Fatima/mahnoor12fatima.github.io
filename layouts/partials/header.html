@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/email.js"></script>
+    <script src="/js/email.js" ></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
@@ -106,6 +106,23 @@
             {{ .name }}
         </a>
     {{ end }}
+       <!-- Language Dropdown -->
+       {{ if gt (len .Site.Languages) 1 }}
+       <select title="lang" id="language-select" class="bg-gray-800 text-white py-2 px-4 rounded">
+           <option value="{{ .Site.Language.Lang }}" selected disabled>🌐 {{ .Site.Language.LanguageName }}</option>
+           {{ range .Site.Languages }}
+           {{ if ne .Lang $currentLang }}
+               {{ $langPrefix := "" }}
+               {{ if ne .Lang $defaultLang }}
+                   {{ $langPrefix = printf "/%s" .Lang }}
+               {{ end }}
+               <option value="{{ $langPrefix }}{{ $.Page.RelPermalink | strings.TrimPrefix (printf "/%s" $currentLang) }}">
+                   {{ .LanguageName }}
+               </option>
+           {{ end }}
+           {{ end }}
+       </select>
+       {{ end }}
 </nav>
 
     </header>
@@ -133,6 +150,7 @@
                     window.location.href = this.value;
                 }
             });
+            
         });
     </script>
     
