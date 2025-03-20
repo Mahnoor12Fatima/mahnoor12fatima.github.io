@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=50734&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datenschutz | My New Hugo Site</title>
@@ -54,7 +54,7 @@
                     
                         
                     
-                    <a href="http://localhost:1313/de/" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                    <a href="http://localhost:50734/de/" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
                         Startseite
                     </a>
                 
@@ -64,7 +64,7 @@
                     
                         
                     
-                    <a href="http://localhost:1313/de/about" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                    <a href="http://localhost:50734/de/about" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
                         Über uns
                     </a>
                 
@@ -74,7 +74,7 @@
                     
                         
                     
-                    <a href="http://localhost:1313/de/services" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                    <a href="http://localhost:50734/de/services" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
                         Dienstleistungen
                     </a>
                 
@@ -84,7 +84,7 @@
                     
                         
                     
-                    <a href="http://localhost:1313/de/blog" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                    <a href="http://localhost:50734/de/blog" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
                         Blog
                     </a>
                 
@@ -94,7 +94,7 @@
                     
                         
                     
-                    <a href="http://localhost:1313/de/references" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                    <a href="http://localhost:50734/de/references" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
                         Referenzen
                     </a>
                 
@@ -104,7 +104,7 @@
                     
                         
                     
-                    <a href="http://localhost:1313/de/faq" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                    <a href="http://localhost:50734/de/faq" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
                         FAQ
                     </a>
                 
@@ -114,7 +114,7 @@
                     
                         
                     
-                    <a href="http://localhost:1313/de/contact" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
+                    <a href="http://localhost:50734/de/contact" class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-400 transition">
                         Kontakt
                     </a>
                 
@@ -273,29 +273,39 @@
     </header>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            
-            document.getElementById('menu-toggle').addEventListener('click', function () {
-                document.getElementById('menu').classList.toggle('hidden');
-            });
+      document.addEventListener("DOMContentLoaded", function() {
     
-            document.getElementById('close-menu').addEventListener('click', function () {
-                document.getElementById('menu').classList.add('hidden');
-            });
-    
-            document.getElementById('language-select').addEventListener('change', function () {
-        if (this.value) {
-            window.location.href = this.value;
-        }
-    });
+    let menuToggle = document.getElementById('menu-toggle');
+    let closeMenu = document.getElementById('close-menu');
+    let menu = document.getElementById('menu');
+
+    if (menuToggle) {
+        menuToggle.addEventListener('click', function () {
+            menu.classList.toggle('hidden');
+        });
+    }
+
+    if (closeMenu) {
+        closeMenu.addEventListener('click', function () {
+            menu.classList.add('hidden');
+        });
+    }
 
     
-    document.getElementById('mobile-language-select').addEventListener('change', function () {
-        if (this.value) {
-            window.location.href = this.value;
-        }
-    });
+    let mobileLangSelect = document.getElementById('mobile-language-select');
+
+    if (mobileLangSelect) {
+        console.log("Mobile language select found!"); 
+        mobileLangSelect.addEventListener('change', function () {
+            if (this.value) {
+                window.location.href = this.value;
+            }
         });
+    } else {
+        console.log("Mobile language select NOT found!"); 
+    }
+});
+
     </script>
     
 </body>
