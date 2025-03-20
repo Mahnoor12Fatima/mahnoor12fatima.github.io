@@ -42,10 +42,10 @@ nav:
       url: "/contact"
     - name: "Impressum"
       url: "/impressum"
-      category: "mehr"
+      category: "more"
     - name: "Datenschutz"
       url: "/datenschutz"
-      category: "mehr"
+      category: "more"
 
 
 
