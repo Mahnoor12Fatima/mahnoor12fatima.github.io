@@ -29,14 +29,14 @@ text-align: center;
 a svg{
 
     margin-left:20px;
-  
+    color: #002244;
 }
 
-header a{
+/* header a{
 
     margin-left:20px;
     color: #002244;
-}
+} */
 p {
     color: #002244; /* Turquoise for links */
     transition: color 0.5s ease;
@@ -225,51 +225,44 @@ body.dark h2 {
 body.dark h2 {
     color:  #b2f5ea;
 }
-
-/* Dropdown Menu Styles */
+/* Dropdown Menu */
 #dropdown-menu {
-    background-color:  #002244; /* Light Gray */
+    background-color: #002244; /* Light Gray */
     transition: background-color 0.3s ease;
-    min-width: 150px; /* Set a minimum width */
-    width: auto; /* Auto width based on content */
-    padding: 5px 0; /* Adjust padding */
-}
- #dropdown-menu a {
-color: #b2f5ea;
-}
-body.dark #dropdown-menu a {
-    color: #002244;
-    }
-
-/* Dark Mode */
-body.dark #dropdown-menu {
-    background-color:  #b2f5ea; /* Dark Blue */
-    transition: background-color 0.3s ease;
-    min-width: 150px; /* Set a minimum width */
-    width: auto; /* Auto width based on content */
-    padding: 5px 0; /* Adjust padding */
+     width: auto; /* Auto width based on content */
+  
 }
 
-/* Hover Effect for Links */
+/* Ensure links take full width */
 #dropdown-menu a {
-    display: inline-block; /* Prevent full width */
-    width: auto; /* Set width based on text */
-    padding: 8px 12px; /* Adjust padding */
+    display: block; /* Full width */
+    width: 100%; /* Ensure it covers the full width */
+    padding: 10px 15px; /* Padding for better spacing */
+    text-align: left; /* Align text to the left */
     transition: background-color 0.3s ease, color 0.3s ease;
-    white-space: nowrap; /* Prevent wrapping */
+    white-space: nowrap; /* Prevent text wrapping */
+    color: #b2f5ea;
 }
 
 /* Light Mode Hover */
-#dropdown-menu a:hover { /* Blue */
+#dropdown-menu a:hover {
     background-color: #b2f5ea;
-    color:#002244 ;
+    color: #002244;
+}
+
+/* Dark Mode */
+body.dark #dropdown-menu {
+    background-color: #b2f5ea; /* Dark Blue */
+}
+
+body.dark #dropdown-menu a {
+    color: #002244;
 }
 
 /* Dark Mode Hover */
 body.dark #dropdown-menu a:hover {
- 
-    background-color:#002244 ;
-    color: #b2f5ea ;
+    background-color: #002244;
+    color: #b2f5ea;
 }
 
 /* Active (Selected) State */
@@ -285,48 +278,49 @@ body.dark #dropdown-menu a:focus {
     background-color: #b2f5ea; /* Turquoise */
     color: #002244 !important;
 }
+/* Dropdown Menu */
 #language-dropdown {
-    background-color: #002244; /* Light Gray */
+    background-color: #002244;
     transition: background-color 0.3s ease;
-    min-width: 150px; /* Set a minimum width */
+    min-width: 150px;
     width: auto; /* Auto width based on content */
-    padding: 5px 0; /* Adjust padding */
    
 }
 
+/* Dark Mode */
 body.dark #language-dropdown {
-    background-color: #b2f5ea; /* Dark Blue */
-    
+    background-color: #b2f5ea;
 }
 
+/* Ensure links take full width */
 #language-dropdown a {
-    display: inline-block; /* Prevent full width */
-    width: auto; /* Set width based on text */
-    padding: 8px 12px; /* Adjust padding */
+    display: block; /* Full width */
+    width: 100%; /* Fill the dropdown width */
+    padding: 8px 12px;
     transition: background-color 0.3s ease, color 0.3s ease;
     white-space: nowrap; /* Prevent wrapping */
-    color:  #b2f5ea;
+    color: #b2f5ea;
+    text-align: left; /* Align text properly */
 }
 
+/* Dark Mode Links */
 body.dark #language-dropdown a {
-    display: inline-block; /* Prevent full width */
-    width: auto; /* Set width based on text */
-    padding: 8px 12px; /* Adjust padding */
-    transition: background-color 0.3s ease, color 0.3s ease;
-    white-space: nowrap; /* Prevent wrapping */
-    color:  #002244 ;
+    color: #002244;
 }
 
+/* Light Mode Hover */
 #language-dropdown a:hover {
-    background-color: #b2f5ea ;
+    background-color: #b2f5ea;
     color: #002244 !important;
 }
 
+/* Dark Mode Hover */
 body.dark #language-dropdown a:hover {
-    background-color: #002244 ;
+    background-color: #002244;
     color: #b2f5ea !important;
 }
 
+/* Language Button in Dark Mode */
 body.dark #language-button {
     color: #b2f5ea;
 }
