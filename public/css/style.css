@@ -19,13 +19,13 @@ body {
     color: #4295ce; /* Darker blue on hover */
 }
 
-li{
+/* li{
     font-size: 2.5rem;
 font-weight: 700;
 letter-spacing: .2em;
 line-height: 50px;
 text-align: center;
-}
+} */
 a svg{
 
     margin-left:20px;
@@ -93,14 +93,26 @@ footerimg{
     
   }
   body svg {
-    fill:  #002244;;
+    fill:  #002244;
 }
   main.pb-7{
     padding-bottom: 0px;
   }
+  h1{ font-size:  2em !important;
+font-weight: bold !important; }
   h2 { 
     font-size: 24px !important;
+    font-weight: bold !important;
   }
+  h3{ font-size: 1.17em !important;
+    font-weight: bold !important;
+color: #002244}
+body.dark h3{ 
+color:#b2f5ea }
+  h4{ font-size: 1em !important;
+    font-weight: bold !important;}
+  h5{ font-size: 0.83em !important;
+    font-weight: bold !important;}
   
   /* Default Light Mode */
  header, footer {
@@ -114,7 +126,7 @@ body.dark {
     background-color: #002244;  /* Dark Blue */
     color: #b2f5ea  /* Turquoise */
 }
-body.dark svg {
+body.dark  #dark-mode-icon{
     fill: #b2f5ea;
 }
 
@@ -213,13 +225,13 @@ body.dark .contact button:hover {
 body.dark #more-button {
     color: #b2f5ea;
 }
-body.dark h1 {
+h1 {
     color:  #002244;
 }
 body.dark h1 {
     color:  #b2f5ea;
 }
-body.dark h2 {
+ h2 {
     color:  #002244;
 }
 body.dark h2 {
@@ -324,3 +336,85 @@ body.dark #language-dropdown a:hover {
 body.dark #language-button {
     color: #b2f5ea;
 }
+
+.resume-container{
+    background-color:#002244 ;
+    border: 2px solid white;
+}
+.resume{
+    
+    border-left: 4px solid #002244 ;
+
+}
+body.dark .resume-container{
+    background-color:#b2f5ea ;
+    border: 2px solid #002244 ;
+}
+body.dark .resume{
+    
+    border-left: 4px solid #b2f5ea ;
+
+}
+.values{
+    background-color: white;
+}
+body.dark .values{
+    background-color: black;
+}
+.aboutme-quote{
+
+    border-left: 4px solid #002244 ;
+    color:#002244 ;
+}
+body.dark .aboutme-quote{
+
+    border-left: 4px solid #b2f5ea ;
+    color:#b2f5ea  ;
+}
+.service{
+    background-color: white;
+}
+body.dark .service{
+    background-color: black;
+}
+.references{
+    background-color: white;
+}
+body.dark .references{
+    background-color: black;
+}
+.animate-scroll {
+    display: flex;
+    animation: scroll 60s linear infinite;
+    min-width: max-content; /* Ensures all elements fit properly */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+        .group:hover {
+            animation-play-state: paused;
+        }
+
+        .imprint{
+
+            background-color: white;
+        }
+        body.dark .imprint{
+
+            background-color: black;
+        }
+
+        .privacy{
+            background-color: white;
+        }
+        body.dark .privacy{
+
+            background-color: black;
+        }

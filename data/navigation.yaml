@@ -17,10 +17,10 @@ nav:
     - name: "Contact"
       url: "/contact"
     - name: "Legal Notice"
-      url: "/impressum"
+      url: "/imprint"
       category: "more"
     - name: "Privacy Policy"
-      url: "/datenschutz"
+      url: "/privacy_policy"
       category: "more"
 
 
@@ -41,10 +41,10 @@ nav:
     - name: "Kontakt"
       url: "/contact"
     - name: "Impressum"
-      url: "/impressum"
+      url: "/Imprint"
       category: "more"
     - name: "Datenschutz"
-      url: "/datenschutz"
+      url: "/privacy_policy"
       category: "more"
 
 

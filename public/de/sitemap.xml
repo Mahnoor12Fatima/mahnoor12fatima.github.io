@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/de/privacy_policy/</loc>
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/privacy_policy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/privacy_policy/"
+                />
+  </url><url>
     <loc>http://localhost:1313/de/services/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -28,17 +41,17 @@
                 href="http://localhost:1313/de/faq/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/</loc>
+    <loc>http://localhost:1313/de/imprint/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="http://localhost:1313/imprint/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/"
+                href="http://localhost:1313/de/imprint/"
                 />
   </url><url>
     <loc>http://localhost:1313/de/contact/</loc>
@@ -65,6 +78,19 @@
                 rel="alternate"
                 hreflang="de"
                 href="http://localhost:1313/de/references/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/de/</loc>
+    <lastmod>2025-01-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/"
                 />
   </url><url>
     <loc>http://localhost:1313/de/about/</loc>
@@ -168,30 +194,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="http://localhost:1313/de/categories/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/de/datenschutz/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/datenschutz/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/datenschutz/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/de/impressum/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/impressum/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/impressum/"
                 />
   </url><url>
     <loc>http://localhost:1313/de/tags/</loc>

@@ -1,31 +1,60 @@
 ---
-title: "Über uns"
+title: "Über mich"
 date: 2025-01-26
 layout: "about"
+company: "TimpTech"
 of: "von"
 sections:
-  - heading: "Unternehmen"
-    content: "Unser Unternehmen ist darauf spezialisiert, erstklassige Lösungen bereitzustellen, die Einzelpersonen und Unternehmen stärken. Wir legen Wert auf Innovation, Effizienz und Kundenzufriedenheit."
 
-  - heading: "Geschichte"
-    content: "Gegründet im [Jahr], begann unser Unternehmen als kleines Team mit einer großen Vision. Im Laufe der Jahre haben wir uns zu einer angesehenen Marke entwickelt, die für Exzellenz und Zuverlässigkeit bekannt ist."
+  - heading: "Vision"
+    content: "Ich möchte den Weg zu einer digital optimierten Zukunft mit innovativen Technologie-Lösungen ebnen. Ich helfe dir, dein kleines, chaotisches Geschäft in ein modernes, effizientes Unternehmen zu verwandeln. Technologie sollte kein Hindernis sein, sondern eine Lösung für dich.  
+    Meine Vision ist es, Arbeitsabläufe zu vereinfachen, die Effizienz zu steigern und dir wertvolle Zeit für das zu geben, was wirklich zählt."
 
-  - heading: "Mission"
-    content: "Unsere Mission ist es, Fortschritt voranzutreiben, indem wir qualitativ hochwertige Produkte und Dienstleistungen liefern, die einen echten Unterschied im Leben der Menschen machen."
+  - heading: "Mission IT"
+    content: "Meine Mission ist es, dir zu zeigen, dass IT weder kompliziert noch einschüchternd sein muss – sie kann das Werkzeug sein, das deinen Alltag erleichtert. Ich bin motiviert, loszulegen, und investiere meine Energie in jedes Projekt, um die besten Ergebnisse zu liefern.  
+    Ich biete eine partnerschaftliche Zusammenarbeit, bei der deine Bedürfnisse an erster Stelle stehen."
 
   - heading: "Unsere Werte"
-    content: "Wir glauben an starke Prinzipien, die unser Geschäft und unsere Unternehmenskultur leiten."
+    content: "Wir glauben an starke Prinzipien, die unser Geschäft und unsere Kultur leiten."
     values:
-      - title: "Sei erstklassig"
-        description: "Wir streben in allem, was wir tun, nach Exzellenz und treiben kontinuierlich die Grenzen der Innovation voran."
-      - title: "Teile dein Wissen"
-        description: "Wir glauben an offenes Wissen und Zusammenarbeit und fördern eine Umgebung des Lernens."
-      - title: "Ständiges Lernen"
-        description: "Kontinuierliches Wachstum und Anpassungsfähigkeit sind der Kern unseres Erfolgswegs."
+      - title: "Menschlich"
+        description: "Jede Zusammenarbeit basiert auf Respekt, Wertschätzung und Vertrauen"
+      - title: "Entschlossen"
+        description: "Ich gebe mich nicht mit irgendeiner Lösung zufrieden – ich finde die beste für dich"
+      - title: "Innovativ"
+        description: "Ich bleibe auf dem neuesten Stand und nutze moderne Technologien, um dir einen Wettbewerbsvorteil zu verschaffen"
+      - title: "Jung und dynamisch"
+        description: "Ich gehe jedes Projekt mit frischen Ideen und voller Energie an"
+      - title: "Vertrauen und Transparenz"
+        description: "Jeder Schritt und jede Entscheidung wird offen kommuniziert"
+      - title: "Offenheit und Mut"
+        description: "Neues auszuprobieren ist essenziell – perfekt, um den ersten Schritt in die Digitalisierung zu wagen"
 
-  - heading: "Über mich"
-    content: "Ich bin leidenschaftlich an Technologie und Unternehmenswachstum interessiert. Mit jahrelanger Erfahrung in der Branche strebe ich danach, Lösungen zu schaffen, die nachhaltige Wirkung haben."
+about_me:
+  heading: "Über mich"
+  image: "/imgs/me2.svg"
+  bio: "Mein Name ist Matteo Timpert, ich bin 24 Jahre alt und IT ist meine Leidenschaft. Als neugieriger Allrounder stelle ich mich jeder Herausforderung und lasse mich von nichts aufhalten.  
+Ich verfolge meine Ziele mit einem klaren Plan und höchster Qualität. Ich freue mich darauf, gemeinsam dein volles Potenzial zu entfalten."
+  quote: "Technologie sollte dem Menschen dienen – nicht umgekehrt."
 
-  - heading: "Lebenslauf"
-    content: "Schauen Sie sich meinen Lebenslauf [hier](#) an, um mehr über meinen beruflichen Werdegang und meine Fachkenntnisse zu erfahren."
+resume:
+  - title: "Praktikum bei W&T"
+    description: "Erfahrungen mit Embedded Systems und IoT gesammelt."
+  - title: "Praktikum bei Primorax Messtechnik GmbH"
+    description: "Arbeit an Präzisionsmesslösungen."
+  - title: "Ausbildung bei SD Worx GmbH"
+    description: "Spezialisierung auf Lohnabrechnungen und HR-Technologien."
+  - title: "Weiterbildung an der Universität Wuppertal"
+    description: "Vertiefung in fortgeschrittene IT-Konzepte."
+  - title: "Cyontec Solution GmbH"
+    description: "Entwicklung von IT-Sicherheits- und Cloud-Lösungen."
+  - title: "Barmenia (jetzt BarmeniaGother)"
+    description: "Management von Unternehmenssoftware-Projekten."
+  - title: "Kubernetes-Zertifizierung"
+    description: "Zertifiziert in Container-Orchestrierung."
+
 ---
+
+Der Name TimpTech kombiniert meinen Nachnamen "Timpert" mit meiner Leidenschaft für "Tech" – Technologie und Innovation waren schon immer meine Welt. Der Name spiegelt wider, wofür mein Unternehmen steht: eine Mischung aus Persönlichkeit und modernster Technologie.  
+TimpTech steht für einen persönlichen, nahbaren Ansatz, um Technologie für alle zugänglich zu machen. Es ist mehr als nur ein Name – es ist ein Versprechen, auf Augenhöhe zu arbeiten und individuelle, zukunftsorientierte Lösungen zu schaffen.  
+Mein Ziel ist es nicht nur, dir die richtigen Werkzeuge bereitzustellen, sondern dich auch zu inspirieren, das volle Potenzial moderner IT auszuschöpfen.

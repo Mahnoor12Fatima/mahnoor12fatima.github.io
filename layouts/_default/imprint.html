@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<body>
+    <div class="max-w-4xl mx-auto my-10 lg:px-4 px-12">
+        
+        <!-- Page Title -->
+        <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
+
+        <!-- Scrollable Impressum Content -->
+        <div class="border border-gray-300 rounded-lg p-4 imprint shadow-md max-h-96 overflow-y-auto">
+            <div class="prose prose-lg ">
+                {{ .Content }}
+            </div>
+        </div>
+
+    </div>
+</body>
+
+{{ end }}
