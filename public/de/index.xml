@@ -1,95 +1,95 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TimpTech on My New Hugo Site</title>
-    <link>http://localhost:1313/de/</link>
-    <description>Recent content in TimpTech on My New Hugo Site</description>
+    <title>TimpTech</title>
+    <link>http://localhost:54427/de/</link>
+    <description>Recent content on TimpTech</description>
     <generator>Hugo</generator>
     <language>de</language>
     <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/de/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54427/de/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Datenschutzerklärung</title>
-      <link>http://localhost:1313/de/privacy_policy/</link>
+      <link>http://localhost:54427/de/privacy_policy/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/privacy_policy/</guid>
+      <guid>http://localhost:54427/de/privacy_policy/</guid>
       <description>&lt;p&gt;Gegenstand dieser Datenschutzhinweise ist die Information darüber, welche Daten bei Ihrem Besuch auf unserer Website und der Nutzung unserer dortigen Angebote erhoben werden und wie diese von uns verarbeitet und genutzt werden.&lt;/p&gt;&#xA;&lt;p&gt; &lt;/p&gt;&#xA;&lt;h3 id=&#34;allgemeines&#34;&gt;Allgemeines&lt;/h3&gt;&#xA;&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;Das IT-Beratungsunternehmen Matteo Timpert (nachfolgend „wir“) betreibt die unter der Domain timptech.com erreichbare Website. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen, wie Name, E-Mail-Adresse, IP-Adresse oder Postanschrift. Wir verarbeiten Ihre personenbezogenen Daten gemäß den gesetzlichen Datenschutzvorschriften und dieser Datenschutzerklärung.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dienstleistungen</title>
-      <link>http://localhost:1313/de/services/</link>
+      <link>http://localhost:54427/de/services/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/services/</guid>
+      <guid>http://localhost:54427/de/services/</guid>
       <description></description>
     </item>
     <item>
       <title>FAQ</title>
-      <link>http://localhost:1313/de/faq/</link>
+      <link>http://localhost:54427/de/faq/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/faq/</guid>
+      <guid>http://localhost:54427/de/faq/</guid>
       <description>&lt;p&gt;this is FAQ&lt;/p&gt;</description>
     </item>
     <item>
       <title>Impressum</title>
-      <link>http://localhost:1313/de/imprint/</link>
+      <link>http://localhost:54427/de/imprint/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/imprint/</guid>
+      <guid>http://localhost:54427/de/imprint/</guid>
       <description>&lt;p&gt;Verantwortlich für den Inhalt&lt;/p&gt;&#xA;&lt;p&gt;Matteo Timpert&lt;/p&gt;&#xA;&lt;p&gt;Telefon: +49 (177) 9647537&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;mailto:info@timptech.com&#34;&gt;info@timptech.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;USt-IdNr.: DE263092262&lt;/p&gt;&#xA;&lt;p&gt; &lt;/p&gt;&#xA;&lt;h3 id=&#34;haftungsausschluss&#34;&gt;Haftungsausschluss&lt;/h3&gt;&#xA;&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;Haftung für Inhalte&lt;/p&gt;&#xA;&lt;p&gt;Als Diensteanbieter sind wir gemäß den allgemeinen Gesetzen für eigene Inhalte auf diesen Seiten verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Sobald wir von entsprechenden Rechtsverletzungen erfahren, werden wir diese Inhalte umgehend entfernen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kontakt</title>
-      <link>http://localhost:1313/de/contact/</link>
+      <link>http://localhost:54427/de/contact/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/contact/</guid>
+      <guid>http://localhost:54427/de/contact/</guid>
       <description></description>
     </item>
     <item>
       <title>Referenzen</title>
-      <link>http://localhost:1313/de/references/</link>
+      <link>http://localhost:54427/de/references/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/references/</guid>
+      <guid>http://localhost:54427/de/references/</guid>
       <description></description>
     </item>
     <item>
       <title>Über mich</title>
-      <link>http://localhost:1313/de/about/</link>
+      <link>http://localhost:54427/de/about/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/about/</guid>
-      <description>&lt;p&gt;Der Name TimpTech kombiniert meinen Nachnamen &amp;ldquo;Timpert&amp;rdquo; mit meiner Leidenschaft für &amp;ldquo;Tech&amp;rdquo; – Technologie und Innovation waren schon immer meine Welt. Der Name spiegelt wider, wofür mein Unternehmen steht: eine Mischung aus Persönlichkeit und modernster Technologie.&lt;br&gt;&#xA;TimpTech steht für einen persönlichen, nahbaren Ansatz, um Technologie für alle zugänglich zu machen. Es ist mehr als nur ein Name – es ist ein Versprechen, auf Augenhöhe zu arbeiten und individuelle, zukunftsorientierte Lösungen zu schaffen.&lt;br&gt;&#xA;Mein Ziel ist es nicht nur, dir die richtigen Werkzeuge bereitzustellen, sondern dich auch zu inspirieren, das volle Potenzial moderner IT auszuschöpfen.&lt;/p&gt;</description>
+      <guid>http://localhost:54427/de/about/</guid>
+      <description>&lt;p&gt;Der Name &lt;strong&gt;TimpTech&lt;/strong&gt; kombiniert meinen Nachnamen „Timpert“ mit meiner Leidenschaft für „Tech“ – Technologie und Innovation waren schon immer meine Welt. Der Name spiegelt wider, wofür mein Unternehmen steht: eine Mischung aus Persönlichkeit und modernster Technologie.&lt;br&gt;&#xA;TimpTech steht für einen persönlichen, zugänglichen Weg, Technologie für alle verständlich und nutzbar zu machen. Es ist mehr als nur ein Name – es ist ein Versprechen, auf Augenhöhe zusammenzuarbeiten und individuelle, zukunftsorientierte Lösungen zu schaffen.&lt;br&gt;&#xA;Mein Ziel ist es nicht nur, dir die richtigen Werkzeuge bereitzustellen, sondern dich auch zu inspirieren, das volle Potenzial der modernen IT auszuschöpfen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Audio &amp; Video mit mediaelement.js abspielen</title>
-      <link>http://localhost:1313/de/blog/video--music-player/</link>
+      <link>http://localhost:54427/de/blog/video--music-player/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/blog/video--music-player/</guid>
+      <guid>http://localhost:54427/de/blog/video--music-player/</guid>
       <description>Magst du Musik? Oder bist du Podcaster? Möchtest du deine Videos in einem ansprechenden Player streamen?</description>
     </item>
     <item>
       <title>Jetzt mit Kommentaren!</title>
-      <link>http://localhost:1313/de/blog/discussion/</link>
+      <link>http://localhost:54427/de/blog/discussion/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/blog/discussion/</guid>
+      <guid>http://localhost:54427/de/blog/discussion/</guid>
       <description>Für einen Blog braucht man Kommentare. Wie bei all den anderen Jekyll-Themes haben wir Disqus integriert. Es ist einfach einzurichten, funktioniert und macht einen statischen Jekyll-Blog dynamischer.</description>
     </item>
     <item>
       <title>Kein Header</title>
-      <link>http://localhost:1313/de/blog/headers-with-style/</link>
+      <link>http://localhost:54427/de/blog/headers-with-style/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/blog/headers-with-style/</guid>
+      <guid>http://localhost:54427/de/blog/headers-with-style/</guid>
       <description>Feeling Responsive ermöglicht die Verwendung aller Arten von Headern. Dieses Beispiel zeigt überhaupt keinen Header – nur die Navigation.</description>
     </item>
     <item>
       <title>Kein Header, aber ein Artikelbild</title>
-      <link>http://localhost:1313/de/blog/headers-with-no-style/</link>
+      <link>http://localhost:54427/de/blog/headers-with-no-style/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/blog/headers-with-no-style/</guid>
+      <guid>http://localhost:54427/de/blog/headers-with-no-style/</guid>
       <description>Feeling Responsive ermöglicht es dir, die Aufmerksamkeit der Besucher zu gewinnen. Wenn du keinen großen Header verwenden möchtest, nutze stattdessen ein Bild für den Artikel.</description>
     </item>
     <item>
       <title>Wunderbare Typografie</title>
-      <link>http://localhost:1313/de/blog/reading-experience/</link>
+      <link>http://localhost:54427/de/blog/reading-experience/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/blog/reading-experience/</guid>
+      <guid>http://localhost:54427/de/blog/reading-experience/</guid>
       <description>Feeling Responsive verwendet Volkhov für Überschriften, Lato für alles andere, und wenn du Code anzeigen musst, wird er in Lucida Console oder Monaco dargestellt.</description>
     </item>
   </channel>

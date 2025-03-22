@@ -355,10 +355,23 @@ body.dark .resume{
     border-left: 4px solid #b2f5ea ;
 
 }
+
+.vision{
+    background-color: lightgray;
+}
+body.dark .vision{
+    background-color: grey;
+}
 .values{
-    background-color: white;
+    background-color: lightblue;
 }
 body.dark .values{
+    background-color: rgb(3, 3, 89);
+}
+.my-values{
+    background-color: white;
+}
+body.dark .my-values{
     background-color: black;
 }
 .aboutme-quote{

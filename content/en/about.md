@@ -4,31 +4,32 @@ date: 2025-01-26
 layout: "about"
 company: "TimpTech"
 of: "of"
-sections:
-
-  - heading: "Vision"
-    content: "I want to pave the way to a digitally optimized future with innovative technology solutions. I help turn your small, disorganized shop into a modern, efficient business. Technology should not be a barrier, but a solution for you.  
+vision:
+   heading: "Vision"
+   content: "I want to pave the way to a digitally optimized future with innovative technology solutions. I help turn your small, disorganized shop into a modern, efficient business. Technology should not be a barrier, but a solution for you.  
     My vision is to simplify workflows, boost efficiency, and give you valuable time for what matters most."
 
-  - heading: "Mission IT"
-    content: "The mission is to show you that IT doesn’t have to be complicated or intimidating – it can be the tool that makes everyday life easier. I am motivated to get started and invest my energy in every project to deliver the best results.  
+mission_it:
+   heading: "Mission IT"
+   content: "The mission is to show you that IT doesn’t have to be complicated or intimidating – it can be the tool that makes everyday life easier. I am motivated to get started and invest my energy in every project to deliver the best results.  
     I offer a collaborative partnership where your needs come first."
 
-  - heading: "Our Values"
+values:
+    heading: "Our Values"
     content: "We believe in strong principles that guide our business and culture."
-    values:
+    our_values:
       - title: "Human"
-        description: "Every collaboration is based on respect, appreciation, and trust"
+        description: "Every collaboration is based on respect, appreciation, and trust."
       - title: "Determined"
-        description: "I don’t settle for just any solution – I find the best one for you"
+        description: "I don’t settle for just any solution – I find the best one for you."
       - title: "Innovative"
-        description: "I stay up-to-date and use the latest technologies to give you a competitive edge"
+        description: "I stay up-to-date and use the latest technologies to give you a competitive edge."
       - title: "Young and Dynamic"
-        description: "I approach every project with fresh ideas and full energy"
+        description: "I approach every project with fresh ideas and full energy."
       - title: "Trust and Transparency"
-        description: "Every step and decision is communicated openly"
+        description: "Every step and decision is communicated openly."
       - title: "Openness and Courage"
-        description: "Trying new things is essential – perfect for taking the first step into digitalization"
+        description: "Trying new things is essential – perfect for taking the first step into digitalization."
 
 about_me:
   heading: "About Me"

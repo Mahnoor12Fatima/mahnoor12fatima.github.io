@@ -1,7 +1,7 @@
 {{ define "main" }}
-<body>
+ <!-- <body>
 
-    <div class="max-w-4xl mx-auto px-6 py-12">
+    <div class=" mx-auto px-6 py-12">
         <h1 class="text-4xl font-bold text-center mb-8">{{ .Title }}</h1>
         <div class="flex flex-col items-center justify-center text-center mt-4 max-w-2xl mx-auto text-lg">
             <p class="text-gray-800">{{ .Content }}</p>
@@ -29,7 +29,6 @@
         </div>
     </div>
 
-    <!-- About Me Section -->
     <section class="max-w-3xl mx-auto px-6 py-12 text-center">
         <h2 class="text-4xl font-bold mb-6 text-gray-700">{{ .Params.about_me.heading }}</h2>
 
@@ -59,6 +58,97 @@
     </section>
     
 
-</body> 
+</body>   -->
+
+<body>
+    <div class="mx-auto  py-12">
+        <h1 class="text-4xl font-bold text-center mb-8">{{ .Title }}</h1>
+        <div class="flex flex-col items-center justify-center text-center mt-4 max-w-2xl mx-auto text-lg">
+            <p class="text-gray-800">{{ .Content }}</p>
+        </div>
+
+        <!-- Vision, Mission IT, and Our Values Section (Three Rows) -->
+        <div class=" mt-12 text-center">
+            <div class="p-6 vision flex flex-col justify-center min-h-[230px] text-center space-y-4">
+                <!-- Heading & Icon in a Single Line -->
+                <div class="flex items-center justify-center space-x-3">
+                    <h2 class="text-xl font-semibold">{{ .Params.vision.heading }}</h2>
+                    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l4 4-4 4m0 0l-4-4 4-4m0 4v12"></path>
+                    </svg>
+                </div>
+            
+                <p class="text-gray-800 text-sm">{{ .Params.vision.content | markdownify }}</p>
+            </div>
+            
+            
+            <div class="p-6   mission flex flex-col justify-center h-48">
+                <h2 class="text-xl font-semibold mb-4 ">{{ .Params.mission_it.heading }}</h2>
+                <p class="text-gray-800 text-sm">{{ .Params.mission_it.content | markdownify }}</p>
+            </div>
+            <div class="p-6   values flex flex-col justify-center h-auto">
+                <h2 class="text-xl font-semibold mb-4 ">{{ .Params.values.heading }}</h2>
+                <p class="text-gray-800 text-sm">{{ .Params.values.content | markdownify }}</p>
+                {{ if .Params.values.our_values }}
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+                    {{ range .Params.values.our_values }}
+                    <div class="rounded-lg border border-gray-200 p-6 shadow-md my-values bg-gray-100 flex flex-col justify-center h-48">
+                        <h3 class="font-bold text-lg mb-4">{{ .title }}</h3>
+                        <p class="text-sm">{{ .description }}</p>
+                    </div>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+
+        <!-- <div class="space-y-8 mt-8">
+            {{ range .Params.sections }}
+            <section>
+                <h2 class="text-2xl font-semibold mb-2 text-gray-700">{{ .heading }}</h2>
+                <p class="text-gray-800">{{ .content | markdownify }}</p>
+
+                {{ if .values }}
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+                    {{ range .values }}
+                    <div class="rounded-lg border border-gray-200 p-6 shadow-md values bg-gray-100 flex flex-col justify-center h-48">
+                        <h3 class="font-bold text-lg">{{ .title }}</h3>
+                        <p class="text-sm">{{ .description }}</p>
+                    </div>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </section>
+            <hr class="border-gray-300 my-6">
+            {{ end }}
+        </div> -->
+    </div>
+
+    <!-- About Me Section -->
+    <section class="max-w-3xl mx-auto px-6 py-12 text-center">
+        <h2 class="text-4xl font-bold mb-6 text-gray-700">{{ .Params.about_me.heading }}</h2>
+        <div class="flex flex-col items-center space-y-6">
+            <p class="text-lg text-gray-800">
+                {{ .Params.about_me.bio | markdownify }}
+            </p>
+            <blockquote class="italic text-xl border-l-4 aboutme-quote pl-4">
+                "{{ .Params.about_me.quote }}"
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto px-6 py-12">
+        <h2 class="text-4xl font-bold text-center mb-8">Resume</h2>
+        <div class="relative border-l-4 resume pl-6">
+            {{ range .Params.resume }}
+            <div class="mb-6">
+                <div class="absolute -left-2.5 w-5 resume-container h-5 rounded-full"></div>
+                <h3 class="text-lg font-semibold">{{ .title }}</h3>
+                <p>{{ .description }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+</body>
 {{ end }}
 

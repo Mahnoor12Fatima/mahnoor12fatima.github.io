@@ -1,95 +1,95 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TimpTech on My New Hugo Site</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in TimpTech on My New Hugo Site</description>
+    <title>TimpTech</title>
+    <link>http://localhost:54427/</link>
+    <description>Recent content on TimpTech</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54427/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:54427/about/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://localhost:54427/about/</guid>
       <description>&lt;p&gt;The name TimpTech combines my last name &amp;ldquo;Timpert&amp;rdquo; with my passion for &amp;ldquo;Tech&amp;rdquo; – technology and innovation have always been my world. The name reflects what my company stands for: a mix of personality and cutting-edge technology.&lt;br&gt;&#xA;TimpTech represents a personal, approachable way to make technology accessible to everyone. It is more than just a name – it’s a promise to work on equal terms and create individual, future-oriented solutions.&lt;br&gt;&#xA;My goal is not only to provide you with the right tools but also to inspire you to fully tap into the potential of modern IT.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>http://localhost:54427/contact/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>http://localhost:54427/contact/</guid>
       <description></description>
     </item>
     <item>
       <title>FAQ</title>
-      <link>http://localhost:1313/faq/</link>
+      <link>http://localhost:54427/faq/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/faq/</guid>
+      <guid>http://localhost:54427/faq/</guid>
       <description>&lt;p&gt;Example of FAQ&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;what does your company do?&#xA;We specialize in [your offering, e.g. IT solutions, web design, consulting]. Our goal is to provide [your business goal, e.g. innovative solutions for our customers].&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;how can I use your services?&#xA;Simply contact us via our contact form or send an e-mail to &lt;a href=&#34;mailto:info@timptech.com&#34;&gt;info@timptech.com&lt;/a&gt;. We will get back to you as soon as possible to discuss your request.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;what are your prices?&#xA;Our prices depend on the individual effort and the requirements of your project. We will be happy to provide you with a non-binding quote after an initial consultation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Imprint</title>
-      <link>http://localhost:1313/imprint/</link>
+      <link>http://localhost:54427/imprint/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/imprint/</guid>
+      <guid>http://localhost:54427/imprint/</guid>
       <description>&lt;p&gt;Responsible for the content&lt;/p&gt;&#xA;&lt;p&gt;Matteo Timpert&lt;/p&gt;&#xA;&lt;p&gt;Telephone: +49 (177) 9647537&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;mailto:info@timptech.com&#34;&gt;info@timptech.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Vat.ID: DE263092262&lt;/p&gt;&#xA;&lt;p&gt; &lt;/p&gt;&#xA;&lt;h3 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h3&gt;&#xA;&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;Liability for content&lt;/p&gt;&#xA;&lt;p&gt;As a service provider, we are responsible for our own content on these pages in accordance with general laws. We are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information according to general laws remain unaffected. However, liability in this regard is only possible from the time we become aware of a specific legal violation. As soon as we become aware of such violations, we will remove this content immediately.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Privacy Policy</title>
-      <link>http://localhost:1313/privacy_policy/</link>
+      <link>http://localhost:54427/privacy_policy/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/privacy_policy/</guid>
+      <guid>http://localhost:54427/privacy_policy/</guid>
       <description>&lt;p&gt;The subject of this data protection notice is the information about what data is collected when you visit our website and the use of our offers there and how it is processed and used by us.&lt;/p&gt;&#xA;&lt;p&gt; &lt;/p&gt;&#xA;&lt;h3 id=&#34;general&#34;&gt;General&lt;/h3&gt;&#xA;&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;The IT consulting company Matteo Timpert (hereinafter &amp;ldquo;we&amp;rdquo;) operates e.g. Website accessible under the domain timptech.com. We take the protection of your personal data very seriously. Personal data is all information that relates to an identified or identifiable natural person, such as name, e-mail address, IP address or postal address. We process your personal data in accordance with the statutory data protection regulations and this data protection notice.&lt;/p&gt;</description>
     </item>
     <item>
       <title>References</title>
-      <link>http://localhost:1313/references/</link>
+      <link>http://localhost:54427/references/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/references/</guid>
+      <guid>http://localhost:54427/references/</guid>
       <description></description>
     </item>
     <item>
       <title>Services</title>
-      <link>http://localhost:1313/services/</link>
+      <link>http://localhost:54427/services/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/services/</guid>
+      <guid>http://localhost:54427/services/</guid>
       <description></description>
     </item>
     <item>
       <title>No Header</title>
-      <link>http://localhost:1313/blog/headers-with-style/</link>
+      <link>http://localhost:54427/blog/headers-with-style/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/headers-with-style/</guid>
+      <guid>http://localhost:54427/blog/headers-with-style/</guid>
       <description>Feeling Responsive allows you to use all kinds of headers. This example shows no header at all. Just the navigation</description>
     </item>
     <item>
       <title>No Header but Article Image</title>
-      <link>http://localhost:1313/blog/headers-with-no-style/</link>
+      <link>http://localhost:54427/blog/headers-with-no-style/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/headers-with-no-style/</guid>
+      <guid>http://localhost:54427/blog/headers-with-no-style/</guid>
       <description>Feeling Responsive enables you to get the attention of visitors. If you don&amp;rsquo;t want to use a big header, use an image for the article instead</description>
     </item>
     <item>
       <title>Now with Comments!</title>
-      <link>http://localhost:1313/blog/discussion/</link>
+      <link>http://localhost:54427/blog/discussion/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/discussion/</guid>
+      <guid>http://localhost:54427/blog/discussion/</guid>
       <description>For a blog you need comments. Like all those other jekyll themes we baked in Disqus. It&amp;rsquo;s easy to set, it works and makes a static jekyll blog more dynamic.</description>
     </item>
     <item>
       <title>Play Audio &amp; Video with mediaelement.js</title>
-      <link>http://localhost:1313/blog/video--music-player/</link>
+      <link>http://localhost:54427/blog/video--music-player/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/video--music-player/</guid>
+      <guid>http://localhost:54427/blog/video--music-player/</guid>
       <description>Do you like music? Or are you a podcaster? Do you want to stream your videos in a nice player?</description>
     </item>
     <item>
       <title>Wonderful Typography</title>
-      <link>http://localhost:1313/blog/reading-experience/</link>
+      <link>http://localhost:54427/blog/reading-experience/</link>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/reading-experience/</guid>
+      <guid>http://localhost:54427/blog/reading-experience/</guid>
       <description>Feeling Responsive uses Volkhov for headlines, Lato for everything else and if you are in need to show some code, it will be in Lucida Console or Monaco</description>
     </item>
   </channel>
