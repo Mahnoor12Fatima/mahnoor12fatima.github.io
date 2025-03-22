@@ -212,50 +212,91 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
     </button>
+  
+    
+    
 
     
     
-        <a href="/" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+        
+        
+            
+        
+        <a href="/" class="px-3 py-2 mobile-nav  transition">
             Home
         </a>
     
-        <a href="/about" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+
+    
+        
+        
+            
+        
+        <a href="/about" class="px-3 py-2 mobile-nav  transition">
             About
-        </a>
-    
-        <a href="/services" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Services
-        </a>
-    
-        <a href="/blog" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Blog
-        </a>
-    
-        <a href="/references" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            References
-        </a>
-    
-        <a href="/faq" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            FAQ
-        </a>
-    
-        <a href="/contact" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Contact
-        </a>
-    
-        <a href="/imprint" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Legal Notice
-        </a>
-    
-        <a href="/privacy_policy" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Privacy Policy
         </a>
     
 
     
+        
+        
+            
+        
+        <a href="/services" class="px-3 py-2 mobile-nav  transition">
+            Services
+        </a>
     
-    <select title="lang" id="mobile-language-select" class="bg-gray-800 text-white py-2 px-4 rounded">
-        <option value="en" selected disabled>🌐 English</option>
+
+    
+        
+        
+            
+        
+        <a href="/blog" class="px-3 py-2 mobile-nav  transition">
+            Blog
+        </a>
+    
+
+    
+        
+        
+            
+        
+        <a href="/references" class="px-3 py-2 mobile-nav  transition">
+            References
+        </a>
+    
+
+    
+        
+        
+            
+        
+        <a href="/faq" class="px-3 py-2 mobile-nav  transition">
+            FAQ
+        </a>
+    
+
+    
+        
+        
+            
+        
+        <a href="/contact" class="px-3 py-2 mobile-nav  transition">
+            Contact
+        </a>
+    
+
+    
+
+    
+
+
+<div class="relative group">
+    <button id="language-button" class="px-3 py-2 flex items-center mobile-more  transition">
+        🌐 English ▼
+    </button>
+    <div id="language-dropdown" class="absolute left-0 hidden group-hover:block shadow-lg rounded-md w-48 ">
         
         
         
@@ -264,13 +305,15 @@
             
                 
             
-            <option value="/de/blog/discussion/">
+            <a href="/de/blog/discussion/" class="block px-4 py-2  hover:text-gray-500 dark:hover:text-gray-400">
                 German
-            </option>
+            </a>
         
         
-    </select>
-    
+    </div>
+</div>
+
+ 
 </nav>
 
 
@@ -295,19 +338,6 @@
         });
     }
 
-    
-    let mobileLangSelect = document.getElementById('mobile-language-select');
-
-    if (mobileLangSelect) {
-        console.log("Mobile language select found!"); 
-        mobileLangSelect.addEventListener('change', function () {
-            if (this.value) {
-                window.location.href = this.value;
-            }
-        });
-    } else {
-        console.log("Mobile language select NOT found!"); 
-    }
 });
 
     </script>
@@ -382,59 +412,96 @@ To <strong>turn on comments</strong>, just add <code>comments: true</code> to th
     
 </head>
 <body>
-    <footer class=" py-8">
-        <div class="max-w-7xl mx-auto px-4">
+    <footer class="py-8 bg-gray-900 text-white">
+        <div class="max-w-4xl lg:max-w-7xl mx-auto px-4 text-center">
             
-            <nav class="flex flex-wrap justify-center gap-4 md:gap-6">
+            <nav class="flex flex-wrap justify-center gap-4 lg:gap-1">
                 
                 
-                    <a href="/" class=" hover:text-gray-300 transition">
+                
+            
+                
+                    
+                    
+                        
+                    
+                    <a href="/" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Home
                     </a>
                 
-                    <a href="/about" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/about" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         About
                     </a>
                 
-                    <a href="/services" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/services" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Services
                     </a>
                 
-                    <a href="/blog" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/blog" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Blog
                     </a>
                 
-                    <a href="/references" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/references" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         References
                     </a>
                 
-                    <a href="/faq" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/faq" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         FAQ
                     </a>
                 
-                    <a href="/contact" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/contact" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Contact
                     </a>
                 
-                    <a href="/imprint" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/imprint" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Legal Notice
                     </a>
                 
-                    <a href="/privacy_policy" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/privacy_policy" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Privacy Policy
                     </a>
                 
             </nav>
     
             
-            <p class="text-center text-gray-500 text-sm mt-6">
+            <p class="text-center text-gray-400 text-sm mt-6">
                 &copy; 2025 TimpTech. All rights reserved.
             </p>
         </div>
     </footer>
     
-    
-
     
 </body>
 </html>

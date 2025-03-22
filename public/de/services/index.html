@@ -210,63 +210,106 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
     </button>
+  
+    
+    
 
     
     
-        <a href="/" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+        
+        
+            
+        
+        <a href="http://localhost:1313/de/" class="px-3 py-2 mobile-nav  transition">
             Startseite
         </a>
     
-        <a href="/about" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+
+    
+        
+        
+            
+        
+        <a href="http://localhost:1313/de/about" class="px-3 py-2 mobile-nav  transition">
             Über uns
-        </a>
-    
-        <a href="/services" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Dienstleistungen
-        </a>
-    
-        <a href="/blog" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Blog
-        </a>
-    
-        <a href="/references" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Referenzen
-        </a>
-    
-        <a href="/faq" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            FAQ
-        </a>
-    
-        <a href="/contact" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Kontakt
-        </a>
-    
-        <a href="/Imprint" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Impressum
-        </a>
-    
-        <a href="/privacy_policy" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Datenschutz
         </a>
     
 
     
+        
+        
+            
+        
+        <a href="http://localhost:1313/de/services" class="px-3 py-2 mobile-nav  transition">
+            Dienstleistungen
+        </a>
     
-    <select title="lang" id="mobile-language-select" class="bg-gray-800 text-white py-2 px-4 rounded">
-        <option value="de" selected disabled>🌐 German</option>
+
+    
+        
+        
+            
+        
+        <a href="http://localhost:1313/de/blog" class="px-3 py-2 mobile-nav  transition">
+            Blog
+        </a>
+    
+
+    
+        
+        
+            
+        
+        <a href="http://localhost:1313/de/references" class="px-3 py-2 mobile-nav  transition">
+            Referenzen
+        </a>
+    
+
+    
+        
+        
+            
+        
+        <a href="http://localhost:1313/de/faq" class="px-3 py-2 mobile-nav  transition">
+            FAQ
+        </a>
+    
+
+    
+        
+        
+            
+        
+        <a href="http://localhost:1313/de/contact" class="px-3 py-2 mobile-nav  transition">
+            Kontakt
+        </a>
+    
+
+    
+
+    
+
+
+<div class="relative group">
+    <button id="language-button" class="px-3 py-2 flex items-center mobile-more  transition">
+        🌐 German ▼
+    </button>
+    <div id="language-dropdown" class="absolute left-0 hidden group-hover:block shadow-lg rounded-md w-48 ">
         
         
             
             
-            <option value="/services/">
+            <a href="/services/" class="block px-4 py-2  hover:text-gray-500 dark:hover:text-gray-400">
                 English
-            </option>
+            </a>
         
         
         
         
-    </select>
-    
+    </div>
+</div>
+
+ 
 </nav>
 
 
@@ -291,19 +334,6 @@
         });
     }
 
-    
-    let mobileLangSelect = document.getElementById('mobile-language-select');
-
-    if (mobileLangSelect) {
-        console.log("Mobile language select found!"); 
-        mobileLangSelect.addEventListener('change', function () {
-            if (this.value) {
-                window.location.href = this.value;
-            }
-        });
-    } else {
-        console.log("Mobile language select NOT found!"); 
-    }
 });
 
     </script>
@@ -315,59 +345,59 @@
     <main class="flex-1 pb-7"> 
         
 <body>
-    <div class="lg:max-w-2xl max-w-sm mx-auto py-12 ">
+    <div class="max-w-3xl w-full px-4 sm:px-6 lg:px-8 mx-auto py-12">
         <h1 class="text-4xl font-bold text-center mb-6">🔧 Dienstleistungen</h1>
 
         
         <div class="space-y-4">
             
-            <details class="service p-4 rounded-lg shadow-md">
-                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
-                    Dokumentation &amp; Erstellung
-                    <svg class="w-6 h-6 transform transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+            <details class="service p-4 bg-white rounded-lg shadow-md open:bg-gray-50 transition-all">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg ">
+                    <span>Dokumentation &amp; Erstellung</span>
+                    <svg class="w-6 h-6 transform transition-transform duration-300 peer-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                     </svg>
                 </summary>
-                <p class="mt-2 text-gray-600">TimpTech unterstützt die Erstellung von Systemarchitekturen. REST, SOAP, SOA und Batch-Systeme sind besonders gut abgedeckt. Brauchen Sie Hilfe mit dem &#39;großen Ganzen&#39;? TimpTech ist für Sie da.</p>
-                
+                <p class="mt-2 text-gray-600 text-sm sm:text-base">TimpTech unterstützt die Erstellung von Systemarchitekturen. REST, SOAP, SOA und Batch-Systeme sind besonders gut abgedeckt. Brauchen Sie Hilfe mit dem &#39;großen Ganzen&#39;? TimpTech ist für Sie da.</p>
+
                 
             </details>
             
-            <details class="service p-4 rounded-lg shadow-md">
-                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
-                    Analyse und Etablierung
-                    <svg class="w-6 h-6 transform transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+            <details class="service p-4 bg-white rounded-lg shadow-md open:bg-gray-50 transition-all">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg ">
+                    <span>Analyse und Etablierung</span>
+                    <svg class="w-6 h-6 transform transition-transform duration-300 peer-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                     </svg>
                 </summary>
-                <p class="mt-2 text-gray-600">TimpTech verfügt über Erfahrung mit verschiedenen Entwicklungsprozessen – von SCRUM, MSF, XP bis hin zum V-Modell. Wir nutzen testgetriebene Entwicklung, Continuous Integration, Continuous Delivery, Git und benutzerdefinierte IDE-Anpassungen.</p>
-                
+                <p class="mt-2 text-gray-600 text-sm sm:text-base">TimpTech verfügt über Erfahrung mit verschiedenen Entwicklungsprozessen – von SCRUM, MSF, XP bis hin zum V-Modell. Wir nutzen testgetriebene Entwicklung, Continuous Integration, Continuous Delivery, Git und benutzerdefinierte IDE-Anpassungen.</p>
+
                 
             </details>
             
-            <details class="service p-4 rounded-lg shadow-md">
-                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
-                    Spezifikation und Entwicklung
-                    <svg class="w-6 h-6 transform transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+            <details class="service p-4 bg-white rounded-lg shadow-md open:bg-gray-50 transition-all">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg ">
+                    <span>Spezifikation und Entwicklung</span>
+                    <svg class="w-6 h-6 transform transition-transform duration-300 peer-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                     </svg>
                 </summary>
-                <p class="mt-2 text-gray-600">TimpTech kann programmieren und bietet maßgeschneiderte Lösungen, die genau auf Ihre Bedürfnisse zugeschnitten sind.</p>
-                
+                <p class="mt-2 text-gray-600 text-sm sm:text-base">TimpTech kann programmieren und bietet maßgeschneiderte Lösungen, die genau auf Ihre Bedürfnisse zugeschnitten sind.</p>
+
                 
             </details>
             
-            <details class="service p-4 rounded-lg shadow-md">
-                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
-                    Fehlersuche und Krisenmanagement
-                    <svg class="w-6 h-6 transform transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+            <details class="service p-4 bg-white rounded-lg shadow-md open:bg-gray-50 transition-all">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg ">
+                    <span>Fehlersuche und Krisenmanagement</span>
+                    <svg class="w-6 h-6 transform transition-transform duration-300 peer-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                     </svg>
                 </summary>
-                <p class="mt-2 text-gray-600">TimpTech wird gerufen, wenn es kritisch wird – wir agieren wie Feuerwehrleute.</p>
+                <p class="mt-2 text-gray-600 text-sm sm:text-base">TimpTech wird gerufen, wenn es kritisch wird – wir agieren wie Feuerwehrleute.</p>
+
                 
-                
-                <ul class="mt-2 text-gray-600 space-y-1 pl-4 list-disc text-sm">
+                <ul class="mt-2 text-gray-600 space-y-1 pl-4 list-disc text-xs sm:text-sm">
                     
                     <li>Ist die Leistung schlecht?</li>
                     
@@ -381,17 +411,17 @@
                 
             </details>
             
-            <details class="service p-4 rounded-lg shadow-md">
-                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
-                    Individuelle Lösungen
-                    <svg class="w-6 h-6 transform transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+            <details class="service p-4 bg-white rounded-lg shadow-md open:bg-gray-50 transition-all">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg ">
+                    <span>Individuelle Lösungen</span>
+                    <svg class="w-6 h-6 transform transition-transform duration-300 peer-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                     </svg>
                 </summary>
-                <p class="mt-2 text-gray-600">TimpTech hilft auch bei kleineren Problemen.</p>
+                <p class="mt-2 text-gray-600 text-sm sm:text-base">TimpTech hilft auch bei kleineren Problemen.</p>
+
                 
-                
-                <ul class="mt-2 text-gray-600 space-y-1 pl-4 list-disc text-sm">
+                <ul class="mt-2 text-gray-600 space-y-1 pl-4 list-disc text-xs sm:text-sm">
                     
                     <li>Brauchen Sie ein Netzwerk? Kein Problem.</li>
                     
@@ -403,15 +433,6 @@
             
         </div>
     </div>
-
-    <script>
-        document.querySelectorAll("details").forEach((detail) => {
-            detail.addEventListener("toggle", () => {
-                let icon = detail.querySelector("summary svg");
-                icon.classList.toggle("rotate-180", detail.open);
-            });
-        });
-    </script>
 </body>
  
     </main>
@@ -431,59 +452,96 @@
     
 </head>
 <body>
-    <footer class=" py-8">
-        <div class="max-w-7xl mx-auto px-4">
+    <footer class="py-8 bg-gray-900 text-white">
+        <div class="max-w-4xl lg:max-w-7xl mx-auto px-4 text-center">
             
-            <nav class="flex flex-wrap justify-center gap-4 md:gap-6">
+            <nav class="flex flex-wrap justify-center gap-4 lg:gap-1">
                 
                 
-                    <a href="/" class=" hover:text-gray-300 transition">
+                
+            
+                
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Startseite
                     </a>
                 
-                    <a href="/about" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/about" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Über uns
                     </a>
                 
-                    <a href="/services" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/services" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Dienstleistungen
                     </a>
                 
-                    <a href="/blog" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/blog" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Blog
                     </a>
                 
-                    <a href="/references" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/references" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Referenzen
                     </a>
                 
-                    <a href="/faq" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/faq" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         FAQ
                     </a>
                 
-                    <a href="/contact" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/contact" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Kontakt
                     </a>
                 
-                    <a href="/Imprint" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/Imprint" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Impressum
                     </a>
                 
-                    <a href="/privacy_policy" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/privacy_policy" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Datenschutz
                     </a>
                 
             </nav>
     
             
-            <p class="text-center text-gray-500 text-sm mt-6">
+            <p class="text-center text-gray-400 text-sm mt-6">
                 &copy; 2025 TimpTech. All rights reserved.
             </p>
         </div>
     </footer>
     
-    
-
     
 </body>
 </html>

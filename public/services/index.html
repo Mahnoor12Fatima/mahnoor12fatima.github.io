@@ -212,50 +212,91 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
     </button>
+  
+    
+    
 
     
     
-        <a href="/" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+        
+        
+            
+        
+        <a href="/" class="px-3 py-2 mobile-nav  transition">
             Home
         </a>
     
-        <a href="/about" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+
+    
+        
+        
+            
+        
+        <a href="/about" class="px-3 py-2 mobile-nav  transition">
             About
-        </a>
-    
-        <a href="/services" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Services
-        </a>
-    
-        <a href="/blog" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Blog
-        </a>
-    
-        <a href="/references" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            References
-        </a>
-    
-        <a href="/faq" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            FAQ
-        </a>
-    
-        <a href="/contact" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Contact
-        </a>
-    
-        <a href="/imprint" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Legal Notice
-        </a>
-    
-        <a href="/privacy_policy" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Privacy Policy
         </a>
     
 
     
+        
+        
+            
+        
+        <a href="/services" class="px-3 py-2 mobile-nav  transition">
+            Services
+        </a>
     
-    <select title="lang" id="mobile-language-select" class="bg-gray-800 text-white py-2 px-4 rounded">
-        <option value="en" selected disabled>🌐 English</option>
+
+    
+        
+        
+            
+        
+        <a href="/blog" class="px-3 py-2 mobile-nav  transition">
+            Blog
+        </a>
+    
+
+    
+        
+        
+            
+        
+        <a href="/references" class="px-3 py-2 mobile-nav  transition">
+            References
+        </a>
+    
+
+    
+        
+        
+            
+        
+        <a href="/faq" class="px-3 py-2 mobile-nav  transition">
+            FAQ
+        </a>
+    
+
+    
+        
+        
+            
+        
+        <a href="/contact" class="px-3 py-2 mobile-nav  transition">
+            Contact
+        </a>
+    
+
+    
+
+    
+
+
+<div class="relative group">
+    <button id="language-button" class="px-3 py-2 flex items-center mobile-more  transition">
+        🌐 English ▼
+    </button>
+    <div id="language-dropdown" class="absolute left-0 hidden group-hover:block shadow-lg rounded-md w-48 ">
         
         
         
@@ -264,13 +305,15 @@
             
                 
             
-            <option value="/de/services/">
+            <a href="/de/services/" class="block px-4 py-2  hover:text-gray-500 dark:hover:text-gray-400">
                 German
-            </option>
+            </a>
         
         
-    </select>
-    
+    </div>
+</div>
+
+ 
 </nav>
 
 
@@ -295,19 +338,6 @@
         });
     }
 
-    
-    let mobileLangSelect = document.getElementById('mobile-language-select');
-
-    if (mobileLangSelect) {
-        console.log("Mobile language select found!"); 
-        mobileLangSelect.addEventListener('change', function () {
-            if (this.value) {
-                window.location.href = this.value;
-            }
-        });
-    } else {
-        console.log("Mobile language select NOT found!"); 
-    }
 });
 
     </script>
@@ -319,59 +349,59 @@
     <main class="flex-1 pb-7"> 
         
 <body>
-    <div class="lg:max-w-2xl max-w-sm mx-auto py-12 ">
+    <div class="max-w-3xl w-full px-4 sm:px-6 lg:px-8 mx-auto py-12">
         <h1 class="text-4xl font-bold text-center mb-6">🔧 Services</h1>
 
         
-        <div class="space-y-4 mx-6">
+        <div class="space-y-4">
             
-            <details class="service p-4 rounded-lg shadow-md">
-                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
-                    Documentation &amp; Creation
-                    <svg class="w-6 h-6 transform transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+            <details class="service p-4 bg-white rounded-lg shadow-md open:bg-gray-50 transition-all">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg ">
+                    <span>Documentation &amp; Creation</span>
+                    <svg class="w-6 h-6 transform transition-transform duration-300 peer-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                     </svg>
                 </summary>
-                <p class="mt-2 text-gray-600">TimpTech supports the creation of system architectures. REST, SOAP, SOA, and batch systems are especially well covered. Need help with the &#39;Big Picture&#39;? TimpTech is here for you.</p>
-                
+                <p class="mt-2 text-gray-600 text-sm sm:text-base">TimpTech supports the creation of system architectures. REST, SOAP, SOA, and batch systems are especially well covered. Need help with the &#39;Big Picture&#39;? TimpTech is here for you.</p>
+
                 
             </details>
             
-            <details class="service p-4 rounded-lg shadow-md">
-                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
-                    Analysis and Establishment
-                    <svg class="w-6 h-6 transform transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+            <details class="service p-4 bg-white rounded-lg shadow-md open:bg-gray-50 transition-all">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg ">
+                    <span>Analysis and Establishment</span>
+                    <svg class="w-6 h-6 transform transition-transform duration-300 peer-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                     </svg>
                 </summary>
-                <p class="mt-2 text-gray-600">TimpTech has experience with various development processes – from SCRUM, MSF, XP to the V-model. We use test-driven development, Continuous Integration, Continuous Delivery, Git, and custom IDE adjustments.</p>
-                
+                <p class="mt-2 text-gray-600 text-sm sm:text-base">TimpTech has experience with various development processes – from SCRUM, MSF, XP to the V-model. We use test-driven development, Continuous Integration, Continuous Delivery, Git, and custom IDE adjustments.</p>
+
                 
             </details>
             
-            <details class="service p-4 rounded-lg shadow-md">
-                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
-                    Specification and Development
-                    <svg class="w-6 h-6 transform transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+            <details class="service p-4 bg-white rounded-lg shadow-md open:bg-gray-50 transition-all">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg ">
+                    <span>Specification and Development</span>
+                    <svg class="w-6 h-6 transform transition-transform duration-300 peer-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                     </svg>
                 </summary>
-                <p class="mt-2 text-gray-600">TimpTech can code and offers custom solutions tailored exactly to your needs.</p>
-                
+                <p class="mt-2 text-gray-600 text-sm sm:text-base">TimpTech can code and offers custom solutions tailored exactly to your needs.</p>
+
                 
             </details>
             
-            <details class="service p-4 rounded-lg shadow-md">
-                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
-                    Troubleshooting and Firefighting
-                    <svg class="w-6 h-6 transform transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+            <details class="service p-4 bg-white rounded-lg shadow-md open:bg-gray-50 transition-all">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg ">
+                    <span>Troubleshooting and Firefighting</span>
+                    <svg class="w-6 h-6 transform transition-transform duration-300 peer-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                     </svg>
                 </summary>
-                <p class="mt-2 text-gray-600">TimpTech is called in when things get critical – we act like firefighters.</p>
+                <p class="mt-2 text-gray-600 text-sm sm:text-base">TimpTech is called in when things get critical – we act like firefighters.</p>
+
                 
-                
-                <ul class="mt-2 text-gray-600 space-y-1 pl-4 list-disc text-sm">
+                <ul class="mt-2 text-gray-600 space-y-1 pl-4 list-disc text-xs sm:text-sm">
                     
                     <li>Is performance poor?</li>
                     
@@ -385,17 +415,17 @@
                 
             </details>
             
-            <details class="service p-4 rounded-lg shadow-md">
-                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
-                    Custom Solutions
-                    <svg class="w-6 h-6 transform transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+            <details class="service p-4 bg-white rounded-lg shadow-md open:bg-gray-50 transition-all">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg ">
+                    <span>Custom Solutions</span>
+                    <svg class="w-6 h-6 transform transition-transform duration-300 peer-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                     </svg>
                 </summary>
-                <p class="mt-2 text-gray-600">TimpTech also helps with smaller issues.</p>
+                <p class="mt-2 text-gray-600 text-sm sm:text-base">TimpTech also helps with smaller issues.</p>
+
                 
-                
-                <ul class="mt-2 text-gray-600 space-y-1 pl-4 list-disc text-sm">
+                <ul class="mt-2 text-gray-600 space-y-1 pl-4 list-disc text-xs sm:text-sm">
                     
                     <li>Need a network set up? No problem.</li>
                     
@@ -407,15 +437,6 @@
             
         </div>
     </div>
-
-    <script>
-        document.querySelectorAll("details").forEach((detail) => {
-            detail.addEventListener("toggle", () => {
-                let icon = detail.querySelector("summary svg");
-                icon.classList.toggle("rotate-180", detail.open);
-            });
-        });
-    </script>
 </body>
  
     </main>
@@ -435,59 +456,96 @@
     
 </head>
 <body>
-    <footer class=" py-8">
-        <div class="max-w-7xl mx-auto px-4">
+    <footer class="py-8 bg-gray-900 text-white">
+        <div class="max-w-4xl lg:max-w-7xl mx-auto px-4 text-center">
             
-            <nav class="flex flex-wrap justify-center gap-4 md:gap-6">
+            <nav class="flex flex-wrap justify-center gap-4 lg:gap-1">
                 
                 
-                    <a href="/" class=" hover:text-gray-300 transition">
+                
+            
+                
+                    
+                    
+                        
+                    
+                    <a href="/" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Home
                     </a>
                 
-                    <a href="/about" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/about" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         About
                     </a>
                 
-                    <a href="/services" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/services" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Services
                     </a>
                 
-                    <a href="/blog" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/blog" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Blog
                     </a>
                 
-                    <a href="/references" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/references" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         References
                     </a>
                 
-                    <a href="/faq" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/faq" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         FAQ
                     </a>
                 
-                    <a href="/contact" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/contact" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Contact
                     </a>
                 
-                    <a href="/imprint" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/imprint" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Legal Notice
                     </a>
                 
-                    <a href="/privacy_policy" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="/privacy_policy" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Privacy Policy
                     </a>
                 
             </nav>
     
             
-            <p class="text-center text-gray-500 text-sm mt-6">
+            <p class="text-center text-gray-400 text-sm mt-6">
                 &copy; 2025 TimpTech. All rights reserved.
             </p>
         </div>
     </footer>
     
-    
-
     
 </body>
 </html>

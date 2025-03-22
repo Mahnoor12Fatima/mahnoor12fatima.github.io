@@ -210,63 +210,106 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
     </button>
+  
+    
+    
 
     
     
-        <a href="/" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+        
+        
+            
+        
+        <a href="http://localhost:1313/de/" class="px-3 py-2 mobile-nav  transition">
             Startseite
         </a>
     
-        <a href="/about" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+
+    
+        
+        
+            
+        
+        <a href="http://localhost:1313/de/about" class="px-3 py-2 mobile-nav  transition">
             Über uns
-        </a>
-    
-        <a href="/services" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Dienstleistungen
-        </a>
-    
-        <a href="/blog" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Blog
-        </a>
-    
-        <a href="/references" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Referenzen
-        </a>
-    
-        <a href="/faq" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            FAQ
-        </a>
-    
-        <a href="/contact" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Kontakt
-        </a>
-    
-        <a href="/Imprint" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Impressum
-        </a>
-    
-        <a href="/privacy_policy" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
-            Datenschutz
         </a>
     
 
     
+        
+        
+            
+        
+        <a href="http://localhost:1313/de/services" class="px-3 py-2 mobile-nav  transition">
+            Dienstleistungen
+        </a>
     
-    <select title="lang" id="mobile-language-select" class="bg-gray-800 text-white py-2 px-4 rounded">
-        <option value="de" selected disabled>🌐 German</option>
+
+    
+        
+        
+            
+        
+        <a href="http://localhost:1313/de/blog" class="px-3 py-2 mobile-nav  transition">
+            Blog
+        </a>
+    
+
+    
+        
+        
+            
+        
+        <a href="http://localhost:1313/de/references" class="px-3 py-2 mobile-nav  transition">
+            Referenzen
+        </a>
+    
+
+    
+        
+        
+            
+        
+        <a href="http://localhost:1313/de/faq" class="px-3 py-2 mobile-nav  transition">
+            FAQ
+        </a>
+    
+
+    
+        
+        
+            
+        
+        <a href="http://localhost:1313/de/contact" class="px-3 py-2 mobile-nav  transition">
+            Kontakt
+        </a>
+    
+
+    
+
+    
+
+
+<div class="relative group">
+    <button id="language-button" class="px-3 py-2 flex items-center mobile-more  transition">
+        🌐 German ▼
+    </button>
+    <div id="language-dropdown" class="absolute left-0 hidden group-hover:block shadow-lg rounded-md w-48 ">
         
         
             
             
-            <option value="/about/">
+            <a href="/about/" class="block px-4 py-2  hover:text-gray-500 dark:hover:text-gray-400">
                 English
-            </option>
+            </a>
         
         
         
         
-    </select>
-    
+    </div>
+</div>
+
+ 
 </nav>
 
 
@@ -291,19 +334,6 @@
         });
     }
 
-    
-    let mobileLangSelect = document.getElementById('mobile-language-select');
-
-    if (mobileLangSelect) {
-        console.log("Mobile language select found!"); 
-        mobileLangSelect.addEventListener('change', function () {
-            if (this.value) {
-                window.location.href = this.value;
-            }
-        });
-    } else {
-        console.log("Mobile language select NOT found!"); 
-    }
 });
 
     </script>
@@ -319,7 +349,7 @@
 <body>
     <div class="mx-auto  py-12">
         <h1 class="text-4xl font-bold text-center mb-8">Über mich</h1>
-        <div class="flex flex-col items-centerpx-4 justify-center text-center mt-4 max-w-2xl mx-auto text-lg">
+        <div class="flex flex-col items-center px-6 justify-center text-center mt-4 max-w-2xl mx-auto text-lg">
             <p class="text-gray-800"><p>Der Name <strong>TimpTech</strong> kombiniert meinen Nachnamen „Timpert“ mit meiner Leidenschaft für „Tech“ – Technologie und Innovation waren schon immer meine Welt. Der Name spiegelt wider, wofür mein Unternehmen steht: eine Mischung aus Persönlichkeit und modernster Technologie.<br>
 TimpTech steht für einen persönlichen, zugänglichen Weg, Technologie für alle verständlich und nutzbar zu machen. Es ist mehr als nur ein Name – es ist ein Versprechen, auf Augenhöhe zusammenzuarbeiten und individuelle, zukunftsorientierte Lösungen zu schaffen.<br>
 Mein Ziel ist es nicht nur, dir die richtigen Werkzeuge bereitzustellen, sondern dich auch zu inspirieren, das volle Potenzial der modernen IT auszuschöpfen.</p>
@@ -341,12 +371,12 @@ Mein Ziel ist es nicht nur, dir die richtigen Werkzeuge bereitzustellen, sondern
             </div>
             
             
-            <div class="p-6   mission flex flex-col justify-center h-48">
+            <div class="p-6   mission flex flex-col justify-center min-h-[230px]">
                 <h2 class="text-xl font-semibold mb-4 ">Mission IT</h2>
                 <p class="text-gray-800 text-sm">Meine Mission ist es, dir zu zeigen, dass IT nicht kompliziert oder einschüchternd sein muss – sie kann das Werkzeug sein, das den Alltag erleichtert. Ich bin motiviert, jedes Projekt mit Energie anzugehen und die besten Ergebnisse zu liefern. Ich biete eine partnerschaftliche Zusammenarbeit, bei der deine Bedürfnisse an erster Stelle stehen.</p>
             </div>
-            <div class="p-6   values flex flex-col justify-center h-auto">
-                <h2 class="text-xl font-semibold mb-4 ">Unsere Werte</h2>
+            <div class="p-6    values flex flex-col justify-center ">
+                <h2 class="text-xl font-semibold mb-4  ">Unsere Werte</h2>
                 <p class="text-gray-800 text-sm">Wir glauben an starke Prinzipien, die unser Unternehmen und unsere Kultur leiten.</p>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
@@ -469,59 +499,96 @@ Mein Ziel ist es nicht nur, dir die richtigen Werkzeuge bereitzustellen, sondern
     
 </head>
 <body>
-    <footer class=" py-8">
-        <div class="max-w-7xl mx-auto px-4">
+    <footer class="py-8 bg-gray-900 text-white">
+        <div class="max-w-4xl lg:max-w-7xl mx-auto px-4 text-center">
             
-            <nav class="flex flex-wrap justify-center gap-4 md:gap-6">
+            <nav class="flex flex-wrap justify-center gap-4 lg:gap-1">
                 
                 
-                    <a href="/" class=" hover:text-gray-300 transition">
+                
+            
+                
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Startseite
                     </a>
                 
-                    <a href="/about" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/about" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Über uns
                     </a>
                 
-                    <a href="/services" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/services" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Dienstleistungen
                     </a>
                 
-                    <a href="/blog" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/blog" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Blog
                     </a>
                 
-                    <a href="/references" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/references" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Referenzen
                     </a>
                 
-                    <a href="/faq" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/faq" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         FAQ
                     </a>
                 
-                    <a href="/contact" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/contact" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Kontakt
                     </a>
                 
-                    <a href="/Imprint" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/Imprint" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Impressum
                     </a>
                 
-                    <a href="/privacy_policy" class=" hover:text-gray-300 transition">
+                    
+                    
+                        
+                    
+                    <a href="http://localhost:1313/de/privacy_policy" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         Datenschutz
                     </a>
                 
             </nav>
     
             
-            <p class="text-center text-gray-500 text-sm mt-6">
+            <p class="text-center text-gray-400 text-sm mt-6">
                 &copy; 2025 TimpTech. All rights reserved.
             </p>
         </div>
     </footer>
     
-    
-
     
 </body>
 </html>

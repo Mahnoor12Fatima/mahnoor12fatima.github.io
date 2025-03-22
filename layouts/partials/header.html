@@ -100,31 +100,44 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
     </button>
+  
+    {{ $currentLang := .Site.Language.Lang }}
+    {{ $defaultLang := .Site.Params.defaultContentLanguage | default "en" }}
 
-    <!-- Navigation Links -->
     {{ range index .Site.Data.navigation.nav $currentLang }}
-        <a href="{{ .url | relURL }}" class="block px-4 py-2 text-white hover:text-gray-400 text-lg">
+    {{ if not (eq .category "more") }}
+        {{ $url := .url }}
+        {{ if eq $currentLang $defaultLang }}
+            {{ $url = .url | relURL }}
+        {{ else }}
+            {{ $url = .url | absLangURL }}
+        {{ end }}
+        <a href="{{ $url }}" class="px-3 py-2 mobile-nav  transition">
             {{ .name }}
         </a>
     {{ end }}
+{{ end }}
 
-    <!-- Language Dropdown -->
-    {{ if gt (len .Site.Languages) 1 }}
-    <select title="lang" id="mobile-language-select" class="bg-gray-800 text-white py-2 px-4 rounded">
-        <option value="{{ .Site.Language.Lang }}" selected disabled>🌐 {{ .Site.Language.LanguageName }}</option>
+<div class="relative group">
+    <button id="language-button" class="px-3 py-2 flex items-center mobile-more  transition">
+        🌐 {{ .Site.Language.LanguageName }} ▼
+    </button>
+    <div id="language-dropdown" class="absolute left-0 hidden group-hover:block shadow-lg rounded-md w-48 ">
         {{ range .Site.Languages }}
         {{ if ne .Lang $currentLang }}
             {{ $langPrefix := "" }}
             {{ if ne .Lang $defaultLang }}
                 {{ $langPrefix = printf "/%s" .Lang }}
             {{ end }}
-            <option value="{{ $langPrefix }}{{ $.Page.RelPermalink | strings.TrimPrefix (printf "/%s" $currentLang) }}">
+            <a href="{{ $langPrefix }}{{ $.Page.RelPermalink | strings.TrimPrefix (printf "/%s" $currentLang) }}" class="block px-4 py-2  hover:text-gray-500 dark:hover:text-gray-400">
                 {{ .LanguageName }}
-            </option>
+            </a>
         {{ end }}
         {{ end }}
-    </select>
-    {{ end }}
+    </div>
+</div>
+
+ 
 </nav>
 
 
@@ -149,19 +162,6 @@
         });
     }
 
-    // ✅ Mobile Language Selector Fix
-    let mobileLangSelect = document.getElementById('mobile-language-select');
-
-    if (mobileLangSelect) {
-        console.log("Mobile language select found!"); // Debugging line
-        mobileLangSelect.addEventListener('change', function () {
-            if (this.value) {
-                window.location.href = this.value;
-            }
-        });
-    } else {
-        console.log("Mobile language select NOT found!"); // Debugging line
-    }
 });
 
     </script>

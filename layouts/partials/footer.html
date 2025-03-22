@@ -13,27 +13,34 @@
     
 </head>
 <body>
-    <footer class=" py-8">
-        <div class="max-w-7xl mx-auto px-4">
+    <footer class="py-8 bg-gray-900 text-white">
+        <div class="max-w-4xl lg:max-w-7xl mx-auto px-4 text-center">
             <!-- Navigation Links -->
-            <nav class="flex flex-wrap justify-center gap-4 md:gap-6">
-                {{ $menu := index .Site.Data.navigation.nav .Site.Language.Lang }}
+            <nav class="flex flex-wrap justify-center gap-4 lg:gap-1">
+                {{ $currentLang := .Site.Language.Lang }}
+                {{ $defaultLang := .Site.Params.defaultContentLanguage | default "en" }}
+                {{ $menu := index .Site.Data.navigation.nav $currentLang }}
+            
                 {{ range $menu }}
-                    <a href="{{ .url | relURL }}" class=" hover:text-gray-300 transition">
+                    {{ $url := .url }}
+                    {{ if eq $currentLang $defaultLang }}
+                        {{ $url = .url | relURL }}
+                    {{ else }}
+                        {{ $url = .url | absLangURL }}
+                    {{ end }}
+                    <a href="{{ $url }}" class="px-3 py-2 text-gray-300 hover:text-gray-400 transition">
                         {{ .name }}
                     </a>
                 {{ end }}
             </nav>
     
             <!-- Copyright -->
-            <p class="text-center text-gray-500 text-sm mt-6">
+            <p class="text-center text-gray-400 text-sm mt-6">
                 &copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.
             </p>
         </div>
     </footer>
     
-    
-
     
 </body>
 </html>
