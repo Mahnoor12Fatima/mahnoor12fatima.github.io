@@ -41,11 +41,16 @@ p {
     color: #002244; /* Turquoise for links */
     transition: color 0.5s ease;
 }
-
 footer a{
     
     margin-left:10px;
     margin-right:10px;
+    color:#002244;
+  
+}
+
+body.dark  footer a{
+    color:#b2f5ea ;
   
 }
 footerimg{
