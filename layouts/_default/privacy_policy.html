@@ -10,20 +10,21 @@
         <div class="privacy border border-gray-300 rounded-lg shadow-md p-6">
             
             <!-- Icons for security and trust -->
-            <div class="flex space-x-6 mb-4">
+            <div class="flex flex-wrap justify-center gap-4 mb-4">
                 <div class="flex items-center space-x-2">
                     <svg class="w-8 h-8 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c1.38 0 2.5-1.12 2.5-2.5S13.38 6 12 6s-2.5 1.12-2.5 2.5S10.62 11 12 11zM12 11v3m-4 4h8c1.1 0 2-.9 2-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v11c0 1.1.9 2 2 2z" />
                     </svg>
-                    <span class=" font-semibold">{{.Params.storage}}</span>
+                    <span class="font-semibold">{{ .Params.storage }}</span>
                 </div>
                 <div class="flex items-center space-x-2">
                     <svg class="w-8 h-8 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l4 4-4 4M8 8l-4 4 4 4M16 16l4 4-4 4M8 16l-4 4 4 4" />
                     </svg>
-                    <span class=" font-semibold">{{.Params.privacy}}</span>
+                    <span class="font-semibold">{{ .Params.privacy }}</span>
                 </div>
             </div>
+            
 
             <!-- Data Protection Text -->
             <div class="prose prose-lg text-gray-800">

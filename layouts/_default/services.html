@@ -1,22 +1,22 @@
 {{ define "main" }}
 <body>
-    <div class="lg:max-w-2xl max-w-sm mx-auto py-12 ">
+    <div class="max-w-3xl w-full px-4 sm:px-6 lg:px-8 mx-auto py-12">
         <h1 class="text-4xl font-bold text-center mb-6">🔧 {{ .Title }}</h1>
 
         <!-- Dynamic Service Items -->
-        <div class="space-y-4 mx-6">
+        <div class="space-y-4">
             {{ range .Params.services }}
-            <details class="service p-4 rounded-lg shadow-md">
-                <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">
-                    {{ .title }}
-                    <svg class="w-6 h-6 transform transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+            <details class="service p-4 bg-white rounded-lg shadow-md open:bg-gray-50 transition-all">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg outline-none focus:ring focus:ring-blue-300 peer">
+                    <span>{{ .title }}</span>
+                    <svg class="w-6 h-6 transform transition-transform duration-300 peer-open:rotate-180" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
                     </svg>
                 </summary>
-                <p class="mt-2 text-gray-600">{{ .content }}</p>
-                
+                <p class="mt-2 text-gray-600 text-sm sm:text-base">{{ .content }}</p>
+
                 {{ if .list }}
-                <ul class="mt-2 text-gray-600 space-y-1 pl-4 list-disc text-sm">
+                <ul class="mt-2 text-gray-600 space-y-1 pl-4 list-disc text-xs sm:text-sm">
                     {{ range .list }}
                     <li>{{ . }}</li>
                     {{ end }}
@@ -26,14 +26,5 @@
             {{ end }}
         </div>
     </div>
-
-    <script>
-        document.querySelectorAll("details").forEach((detail) => {
-            detail.addEventListener("toggle", () => {
-                let icon = detail.querySelector("summary svg");
-                icon.classList.toggle("rotate-180", detail.open);
-            });
-        });
-    </script>
 </body>
 {{ end }}
