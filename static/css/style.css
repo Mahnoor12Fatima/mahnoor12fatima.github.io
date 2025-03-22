@@ -403,7 +403,7 @@ body.dark .references{
 }
 .animate-scroll {
     display: flex;
-    animation: scroll 60s linear infinite;
+    animation: scroll 20s linear infinite;
     min-width: max-content; /* Ensures all elements fit properly */
 }
 
