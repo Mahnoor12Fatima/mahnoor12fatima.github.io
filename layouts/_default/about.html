@@ -63,7 +63,7 @@
 <body>
     <div class="mx-auto  py-12">
         <h1 class="text-4xl font-bold text-center mb-8">{{ .Title }}</h1>
-        <div class="flex flex-col items-center justify-center text-center mt-4 max-w-2xl mx-auto text-lg">
+        <div class="flex flex-col items-center px-6 justify-center text-center mt-4 max-w-2xl mx-auto text-lg">
             <p class="text-gray-800">{{ .Content }}</p>
         </div>
 
@@ -82,12 +82,12 @@
             </div>
             
             
-            <div class="p-6   mission flex flex-col justify-center h-48">
+            <div class="p-6   mission flex flex-col justify-center min-h-[230px]">
                 <h2 class="text-xl font-semibold mb-4 ">{{ .Params.mission_it.heading }}</h2>
                 <p class="text-gray-800 text-sm">{{ .Params.mission_it.content | markdownify }}</p>
             </div>
-            <div class="p-6   values flex flex-col justify-center h-auto">
-                <h2 class="text-xl font-semibold mb-4 ">{{ .Params.values.heading }}</h2>
+            <div class="p-6    values flex flex-col justify-center ">
+                <h2 class="text-xl font-semibold mb-4  ">{{ .Params.values.heading }}</h2>
                 <p class="text-gray-800 text-sm">{{ .Params.values.content | markdownify }}</p>
                 {{ if .Params.values.our_values }}
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
